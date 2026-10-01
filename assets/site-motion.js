@@ -265,8 +265,7 @@ html{scroll-behavior:smooth}
     const trig = hg.parentElement && hg.parentElement !== sec ? hg.parentElement : hg;
     const kicker = hg.querySelector('p');
     if (kicker && kicker !== h2) {
-      add(trig, kicker, 'fade', 0, 0.4);
-      addRun(trig, () => scramble(kicker), 0);
+      add(trig, kicker, 'up', 0, 0.5);
     }
     splitWords(h2);
     add(trig, h2, null, 60);
@@ -413,7 +412,8 @@ html{scroll-behavior:smooth}
     i.className = 'm-loop';
     l.appendChild(i);
     sec.insertBefore(l, sec.firstChild);
-    const place = (x, y) => { l.style.transform = 'translate(' + x + 'px,' + y + 'px)'; };
+    const zoom = () => (sec.getBoundingClientRect().width / (sec.offsetWidth || 1)) || 1;
+    const place = (x, y) => { const z = zoom(); l.style.transform = 'translate(' + (x / z) + 'px,' + (y / z) + 'px)'; };
     const r0 = sec.getBoundingClientRect();
     place(r0.width * 0.72, r0.height * 0.35);
     sec.addEventListener('pointermove', e => {
@@ -428,7 +428,7 @@ html{scroll-behavior:smooth}
     const h1 = sec.querySelector('h1');
     const text = sec.querySelector('[data-fx="text"]');
     const phone = sec.querySelector('[data-fx="phone"]');
-    if (kicker) { tag(kicker, 'fade', 0, 0.4); kicker.classList.add('m-in'); scramble(kicker, 700); }
+    if (kicker) { tag(kicker, 'up', 0, 0.5); kicker.classList.add('m-in'); }
     if (h1) {
       const w = splitWords(h1);
       w.forEach((x, k) => x.style.setProperty('--m-d', 120 + k * 55 + 'ms'));
