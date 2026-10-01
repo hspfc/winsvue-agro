@@ -306,15 +306,20 @@ html{scroll-behavior:smooth}
     }
 
     if (label === 'Tese') {
-      pick(sec, 'div', st => st.flexWrap === 'wrap' && st.alignItems === 'center' && st.gap === '8px').forEach((chain, ci) => {
-        stagger(chain, Array.from(chain.children), 'pop', 55, 150, 0.45);
-        if (ci === 1) {
-          pick(chain, 'span', st => st.backgroundColor === BLUE).forEach((s, i) => {
-            s.classList.add('m-chip', 'm-loop');
-            s.style.setProperty('--i', i);
+      $$(sec, 'ol[data-steps]').forEach(list => {
+        Array.from(list.children).forEach((li, i) => {
+          add(list, li, 'left', 140 + i * 70, 0.45);
+          const tg = li.querySelector('[data-tag]');
+          if (tg) add(list, tg, 'pop', 330 + i * 70, 0.4);
+        });
+        if (list.closest('[data-tese="wins"]')) {
+          pick(list, '[data-tag]', st => st.backgroundColor === BLUE).forEach((t, i) => {
+            t.classList.add('m-chip', 'm-loop');
+            t.style.setProperty('--i', i);
           });
         }
       });
+      $$(sec, '[data-big]').forEach(n => add(n.parentElement, n, 'pop', 80, 0.55));
       live.observe(sec);
     }
 
