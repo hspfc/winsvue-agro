@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html><head><script>window.__resources = {"https://unpkg.com/react@18.3.1/umd/react.production.min.js":"assets/7879d1e9.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"assets/141dc7a5.js"};</script>
+<meta charset="utf-8">
+<title>WinsVue Agro</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="assets/f80dd101.js"></script>
+
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<style>/* thai */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/59349d7f.woff2") format('woff2');
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/7a07c0ec.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/32cccb9f.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/5f294e5b.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/91d296a7.woff2") format('woff2');
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/c8787420.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/a1cae766.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/d077839f.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/bfec06be.woff2") format('woff2');
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/f20e5d09.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/b074a2bf.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/3fd92ab4.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/451fd322.woff2") format('woff2');
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/9d395706.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/92820aca.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/2f759624.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/0258024a.woff2") format('woff2');
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/785ae8c1.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/c5c66f24.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/5e9b3671.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/f918b5ca.woff2") format('woff2');
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/4a99fda1.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/8b93e80c.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/3e58e2b1.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<script src="assets/3cc83944.js"></script>
+<style>
+html{scroll-behavior:smooth;overflow-x:clip}
+*{box-sizing:border-box}
+body{margin:0;overflow-x:clip;background:#FFFFFF;color:#000916;font-family:'Kanit',sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+a{color:#2459B3;text-decoration:none;transition:color .15s}
+a:hover{color:#568EFF}
+input,button{font:inherit}
+::selection{background:#568EFF;color:#FFFFFF}
+</style>
+</helmet>
+
+<header style="position:sticky;top:0;z-index:50;background:#000916;border-bottom:2px solid #568EFF">
+  <div style="max-width:1440px;margin:0 auto;padding:0 clamp(16px,5.5vw,80px);height:88px;display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,2vw,24px)">
+    <a href="#" style="display:flex;align-items:center;gap:clamp(10px,1.5vw,16px);flex:0 1 auto;min-width:0;overflow:hidden">
+      <img src="assets/464f6de0.svg" width="150" height="32" alt="WinsVue" style="display:block;height:clamp(22px,3vw,32px);width:auto;flex:none">
+      <span style="width:1px;height:26px;background:rgba(255,255,255,.25);flex:none"></span>
+      <span style="color:#FFFFFF;font-size:clamp(14px,1.8vw,20px);font-weight:700;letter-spacing:0.12em;text-transform:uppercase;flex:none">Agro</span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:clamp(12px,2.2vw,32px);flex-wrap:nowrap;justify-content:flex-end;min-width:max-content;flex:1 0 auto">
+      <div style="display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center;column-gap:clamp(16px,2.2vw,32px);row-gap:40px;height:22px;overflow:hidden;min-width:0;width:0;flex:1 1 0">
+      <a href="#captura" style="color:rgba(255,255,255,.7);font-size:14px;font-weight:500;letter-spacing:0.04em;text-transform:uppercase" style-hover="color:#FFFFFF">Como funciona</a>
+      <a href="#decisao" style="color:rgba(255,255,255,.7);font-size:14px;font-weight:500;letter-spacing:0.04em;text-transform:uppercase" style-hover="color:#FFFFFF">Briefing</a>
+      <a href="#rastreio" style="color:rgba(255,255,255,.7);font-size:14px;font-weight:500;letter-spacing:0.04em;text-transform:uppercase" style-hover="color:#FFFFFF">Confiança</a>
+      <a href="#integracoes" style="color:rgba(255,255,255,.7);font-size:14px;font-weight:500;letter-spacing:0.04em;text-transform:uppercase" style-hover="color:#FFFFFF">Integrações</a>
+      </div>
+      <a href="#piloto" style="flex:none;white-space:nowrap;display:inline-flex;align-items:center;height:clamp(40px,5vw,48px);padding:0 clamp(12px,2vw,24px);background:#568EFF;color:#FFFFFF;font-size:clamp(13px,1.4vw,15px);font-weight:600;text-transform:uppercase;transition:background .15s" style-hover="background:#0F1B35;color:#FFFFFF;box-shadow:inset 0 0 0 2px #568EFF">Quero o piloto</a>
+    </nav>
+  </div>
+</header>
+
+<section data-screen-label="Hero" style="position:relative;overflow:hidden;background:#0F1B35">
+  <sc-if value="{{ fotos }}" hint-placeholder-val="{{ false }}">
+    <div style="position:absolute;inset:0">
+      <image-slot id="hero-fazenda" shape="rect" placeholder="Foto: lavoura de soja ao amanhecer, sede da fazenda ao fundo" style="position:absolute;inset:0;width:100%;height:100%"></image-slot>
+      <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(15,27,53,.96) 0%,rgba(15,27,53,.88) 38%,rgba(15,27,53,.35) 62%,rgba(15,27,53,.15) 100%)"></div>
+    </div>
+  </sc-if>
+  <div style="position:relative;max-width:1440px;margin:0 auto;padding:clamp(48px,6vw,96px) clamp(20px,5.5vw,80px) clamp(56px,6vw,88px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:clamp(48px,6vw,96px);align-items:center;pointer-events:none">
+    <div style="display:flex;flex-direction:column;gap:28px;max-width:600px;pointer-events:auto">
+      <p style="margin:0;color:#FF1A6C;font-size:14px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase">Back office da fazenda, pelo WhatsApp</p>
+      <h1 style="margin:0;font-size:clamp(38px,4.6vw,60px);line-height:1;font-weight:700;text-transform:uppercase;color:#FFFFFF;text-wrap:balance">Você toca a fazenda. <span style="color:#568EFF">A WinsVue cuida dos números.</span></h1>
+      <p style="margin:0;font-size:18px;line-height:1.625;color:rgba(255,255,255,.85);max-width:520px;text-wrap:pretty">Manda o áudio do abastecimento, a foto da nota, o PDF do contrato. A WinsVue lança, confere com o banco, calcula o custo e avisa o que importa antes de você perguntar.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a href="#piloto" style="display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 32px;background:#568EFF;color:#FFFFFF;font-size:17px;font-weight:600;text-transform:uppercase;transition:background .15s" style-hover="background:#0F1B35;color:#FFFFFF;box-shadow:inset 0 0 0 2px #568EFF">Quero entrar no piloto</a>
+        <a href="#captura" style="display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 32px;color:#FFFFFF;font-size:17px;font-weight:600;text-transform:uppercase;box-shadow:inset 0 0 0 2px rgba(255,255,255,.35)" style-hover="color:#FFFFFF;box-shadow:inset 0 0 0 2px #568EFF">Ver como funciona</a>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;border-top:1px solid rgba(255,255,255,.15);padding-top:24px;margin-top:4px">
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:clamp(18px,1.6vw,22px);line-height:1.1;font-weight:700;color:#FFFFFF">Áudio, foto, PDF</span><span style="font-size:13px;line-height:1.35;color:rgba(255,255,255,.65)">Entram pelo grupo da fazenda</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:clamp(18px,1.6vw,22px);line-height:1.1;font-weight:700;color:#FFFFFF">NF e extrato</span><span style="font-size:13px;line-height:1.35;color:rgba(255,255,255,.65)">Cada lançamento é conferido</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:clamp(18px,1.6vw,22px);line-height:1.1;font-weight:700;color:#FFFFFF">Segunda, 7h</span><span style="font-size:13px;line-height:1.35;color:rgba(255,255,255,.65)">Chega o briefing da semana</span></div>
+      </div>
+    </div>
+
+    <div style="width:100%;max-width:364px;margin:0 auto;background:#000916;border-radius:44px;padding:10px;box-shadow:0 40px 80px -24px rgba(0,9,22,.7),0 0 0 1px rgba(255,255,255,.08);pointer-events:auto">
+      <div style="border-radius:35px;overflow:hidden;background:#E6E7E8;height:640px;display:flex;flex-direction:column;color:#000916">
+        <div style="background:#FFFFFF;padding:12px 26px 0;display:flex;align-items:center;justify-content:space-between">
+          <span style="font-size:14px;font-weight:600">7:00</span>
+          <span style="width:90px;height:24px;border-radius:14px;background:#000916"></span>
+          <span style="width:24px;height:11px;border-radius:3px;border:1.5px solid #000916"></span>
+        </div>
+        <div style="background:#FFFFFF;padding:12px 16px;display:flex;align-items:center;gap:12px;border-bottom:1px solid rgba(15,27,53,.12)">
+          <div style="width:40px;height:40px;border-radius:50%;background:#0F1B35;color:#568EFF;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;flex:none">G</div>
+          <div style="display:flex;flex-direction:column;min-width:0">
+            <span style="font-size:16px;font-weight:600;line-height:1.2">Grace · WinsVue</span>
+            <span style="font-size:12.5px;color:#596363;line-height:1.3">Controladoria da fazenda</span>
+          </div>
+        </div>
+        <div ref="{{ chatRef }}" style="flex:1;overflow-y:auto;scrollbar-width:none;padding:14px 12px;display:flex;flex-direction:column;gap:8px">
+          <div style="align-self:center;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#373535;background:#D5D8DD;padding:4px 10px">Segunda, 5 de outubro</div>
+          <sc-if value="{{ showBrief }}" hint-placeholder-val="{{ true }}">
+            <div style="align-self:flex-start;max-width:92%;background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:11px 13px 7px;display:flex;flex-direction:column;gap:9px;font-size:14.5px;line-height:1.42">
+              <div style="font-weight:600">Bom dia, {{ produtor }}. Tem 3 coisas que merecem sua atenção hoje.</div>
+              <div style="display:grid;grid-template-columns:16px minmax(0,1fr);gap:5px 6px">
+                <span style="color:#2459B3;font-weight:700">1</span><span><strong style="font-weight:600">R$ 840 mil</strong> vencem sexta-feira.</span>
+                <span style="color:#2459B3;font-weight:700">2</span><span>O custo projetado da soja passou de R$ 89 para <strong style="font-weight:600">R$ 94/saca</strong>.</span>
+                <span style="color:#2459B3;font-weight:700">3</span><span>A proposta recebida ontem para 10 mil sacas cobre os compromissos de novembro e ainda deixa <strong style="font-weight:600">72% da produção</strong> sem preço.</span>
+              </div>
+              <span style="align-self:flex-end;font-size:11px;color:#596363">07:00</span>
+            </div>
+          </sc-if>
+          <sc-if value="{{ showAsk }}" hint-placeholder-val="{{ true }}">
+            <div style="align-self:flex-start;max-width:90%;background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:10px 13px 7px;display:flex;flex-direction:column;gap:4px;font-size:14.5px;line-height:1.42">
+              <span>Quer entender o item 2?</span>
+              <span style="align-self:flex-end;font-size:11px;color:#596363">07:00</span>
+            </div>
+          </sc-if>
+          <sc-if value="{{ showChips }}" hint-placeholder-val="{{ true }}">
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <button sc-camel-on-click="{{ replyQuero }}" style="background:#FFFFFF;border:1.5px solid #568EFF;color:#2459B3;font-weight:600;font-size:14.5px;padding:9px 18px;border-radius:18px;cursor:pointer" style-hover="background:#568EFF;color:#FFFFFF">Quero</button>
+              <button sc-camel-on-click="{{ replyDepois }}" style="background:#FFFFFF;border:1.5px solid rgba(15,27,53,.25);color:#000916;font-weight:500;font-size:14.5px;padding:9px 18px;border-radius:18px;cursor:pointer" style-hover="border-color:#568EFF">Depois</button>
+            </div>
+          </sc-if>
+          <sc-if value="{{ showReply }}" hint-placeholder-val="{{ false }}">
+            <div style="align-self:flex-end;max-width:80%;background:#0F1B35;color:#FFFFFF;border-radius:14px 4px 14px 14px;padding:9px 13px 6px;display:flex;flex-direction:column;gap:2px;font-size:14.5px">
+              <span>{{ replyText }}</span>
+              <span style="align-self:flex-end;font-size:11px;color:rgba(255,255,255,.65)">07:04</span>
+            </div>
+          </sc-if>
+          <sc-if value="{{ showTyping }}" hint-placeholder-val="{{ false }}">
+            <div style="align-self:flex-start;background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:9px 13px;font-size:13px;color:#596363;font-style:italic">Grace está digitando…</div>
+          </sc-if>
+          <sc-if value="{{ showExplain }}" hint-placeholder-val="{{ false }}">
+            <div style="align-self:flex-start;max-width:92%;background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:11px 13px 7px;display:flex;flex-direction:column;gap:9px;font-size:14.5px;line-height:1.42">
+              <span>O que subiu desde o orçamento de julho:</span>
+              <div style="display:flex;flex-direction:column;border-top:1px solid rgba(15,27,53,.1)">
+                <div style="display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px solid rgba(15,27,53,.1)"><span>Adubo da Santa Clara</span><span style="font-weight:600;color:#FF003F">+3,10</span></div>
+                <div style="display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px solid rgba(15,27,53,.1)"><span>Diesel da Boa Vista</span><span style="font-weight:600;color:#FF003F">+1,40</span></div>
+                <div style="display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px solid rgba(15,27,53,.1)"><span>Juros da parcela rolada</span><span style="font-weight:600;color:#FF003F">+0,50</span></div>
+                <div style="display:flex;justify-content:space-between;gap:10px;padding:6px 0;font-weight:600"><span>R$/saca</span><span>89 → 94</span></div>
+              </div>
+              <span style="font-size:13px;color:#596363">De onde veio: NF 4.512 da Agro Sul, 9 abastecimentos e o extrato do Sicredi.</span>
+              <span style="align-self:flex-end;font-size:11px;color:#596363">07:04</span>
+            </div>
+          </sc-if>
+          <sc-if value="{{ showLater }}" hint-placeholder-val="{{ false }}">
+            <div style="align-self:flex-start;max-width:90%;background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:10px 13px 7px;display:flex;flex-direction:column;gap:4px;font-size:14.5px;line-height:1.42">
+              <span>Combinado. Te mando depois do almoço.</span>
+              <span style="align-self:flex-end;font-size:11px;color:#596363">07:04</span>
+            </div>
+          </sc-if>
+        </div>
+        <div style="background:#FFFFFF;padding:10px 12px 20px;display:flex;align-items:center;gap:8px;border-top:1px solid rgba(15,27,53,.12)">
+          <div style="flex:1;background:#F4F5F7;border-radius:20px;padding:11px 15px;font-size:14px;color:#596363">Mensagem</div>
+          <div style="width:42px;height:42px;border-radius:50%;background:#568EFF;display:flex;align-items:center;justify-content:center;flex:none"><span style="width:9px;height:16px;border-radius:5px;background:#FFFFFF"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Tese" style="background:#FFFFFF;padding:clamp(56px,7vw,96px) clamp(20px,5.5vw,80px)">
+  <div style="max-width:1440px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(40px,4vw,56px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:32px 80px;align-items:end">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <p style="margin:0;color:#FF1A6C;font-size:14px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase">A ideia</p>
+        <h2 style="margin:0;font-size:clamp(28px,3vw,40px);line-height:1;font-weight:700;text-transform:uppercase;color:#000916;text-wrap:balance">O trabalho administrativo muda de lado</h2>
+        <img src="assets/c8922da4.svg" width="282" height="10" alt="" style="display:block;max-width:100%;height:auto">
+      </div>
+      <p style="margin:0;font-size:17px;line-height:1.625;color:#373535;max-width:520px;text-wrap:pretty">Sistema de gestão espera que alguém lance, classifique e confira para depois você interpretar. A WinsVue faz esse trabalho e entrega a conta pronta, em linguagem de produtor.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:24px">
+      <div style="border:1px solid rgba(15,27,53,.18);border-top:4px solid #596363;padding:clamp(24px,2.5vw,32px);display:flex;flex-direction:column;gap:20px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap">
+          <h3 style="margin:0;font-size:22px;line-height:1.1;font-weight:600;text-transform:uppercase">Software tradicional</h3>
+          <span style="font-size:14px;color:#596363">6 etapas com você</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px">
+          <span style="padding:9px 14px;font-weight:700;font-size:14px;letter-spacing:0.06em;box-shadow:inset 0 0 0 2px #0F1B35">PRODUTOR</span>
+          <span style="color:#596363">→</span>
+          <span style="background:#E6E7E8;padding:9px 14px;font-weight:500;font-size:15px">lança</span>
+          <span style="color:#596363">→</span>
+          <span style="background:#E6E7E8;padding:9px 14px;font-weight:500;font-size:15px">classifica</span>
+          <span style="color:#596363">→</span>
+          <span style="background:#E6E7E8;padding:9px 14px;font-weight:500;font-size:15px">confere</span>
+          <span style="color:#596363">→</span>
+          <span style="background:#E6E7E8;padding:9px 14px;font-weight:500;font-size:15px">consulta</span>
+          <span style="color:#596363">→</span>
+          <span style="background:#E6E7E8;padding:9px 14px;font-weight:500;font-size:15px">interpreta</span>
+          <span style="color:#596363">→</span>
+          <span style="background:#E6E7E8;padding:9px 14px;font-weight:500;font-size:15px">decide</span>
+        </div>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#596363">Você ou o seu escritório faz todas as etapas. O sistema guarda.</p>
+      </div>
+      <div style="border:1px solid rgba(15,27,53,.18);border-top:4px solid #568EFF;padding:clamp(24px,2.5vw,32px);display:flex;flex-direction:column;gap:20px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap">
+          <h3 style="margin:0;font-size:22px;line-height:1.1;font-weight:600;text-transform:uppercase">Com a WinsVue</h3>
+          <span style="font-size:14px;color:#596363">1 etapa com você</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px">
+          <span style="padding:9px 14px;font-weight:700;font-size:14px;letter-spacing:0.06em;box-shadow:inset 0 0 0 2px #0F1B35">FAZENDA</span>
+          <span style="color:#596363">→</span>
+          <span style="background:#568EFF;color:#FFFFFF;padding:9px 14px;font-weight:500;font-size:15px">captura</span>
+          <span style="color:#596363">→</span>
+          <span style="background:#568EFF;color:#FFFFFF;padding:9px 14px;font-weight:500;font-size:15px">organiza</span>
+          <span style="color:#596363">→</span>
+          <span style="background:#568EFF;color:#FFFFFF;padding:9px 14px;font-weight:500;font-size:15px">confere</span>
+          <span style="color:#596363">→</span>
+          <span style="background:#568EFF;color:#FFFFFF;padding:9px 14px;font-weight:500;font-size:15px">calcula</span>
+          <span style="color:#596363">→</span>
+          <span style="background:#568EFF;color:#FFFFFF;padding:9px 14px;font-weight:500;font-size:15px">monitora</span>
+          <span style="color:#596363">→</span>
+          <span style="background:#568EFF;color:#FFFFFF;padding:9px 14px;font-weight:500;font-size:15px">explica</span>
+          <span style="color:#596363">→</span>
+          <span style="background:#568EFF;color:#FFFFFF;padding:9px 14px;font-weight:500;font-size:15px">alerta</span>
+          <span style="color:#596363">→</span>
+          <span style="background:#0F1B35;color:#FFFFFF;padding:9px 14px;font-weight:700;font-size:14px;letter-spacing:0.06em">PRODUTOR DECIDE</span>
+        </div>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#596363">A WinsVue faz o trabalho. Você só decide.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="captura" data-screen-label="01 Captura" style="background:#E6E7E8;padding:clamp(56px,7vw,96px) clamp(20px,5.5vw,80px);scroll-margin-top:88px">
+  <div style="max-width:1440px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(40px,4vw,56px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:32px 80px;align-items:end">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <p style="margin:0;color:#FF1A6C;font-size:14px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase">01 · Captura</p>
+        <h2 style="margin:0;font-size:clamp(28px,3vw,40px);line-height:1;font-weight:700;text-transform:uppercase;color:#000916;text-wrap:balance">Manda do jeito que você já manda</h2>
+        <img src="assets/c8922da4.svg" width="282" height="10" alt="" style="display:block;max-width:100%;height:auto">
+      </div>
+      <p style="margin:0;font-size:17px;line-height:1.625;color:#373535;max-width:520px;text-wrap:pretty">Ninguém na fazenda precisa abrir sistema. O encarregado grava um áudio, o produtor escreve no grupo, o posto manda a nota, o banco registra o pagamento. Tudo isso vira lançamento.</p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        <sc-for list="{{ tabs }}" as="t" hint-placeholder-count="5">
+          <sc-if value="{{ t.active }}" hint-placeholder-val="{{ false }}">
+            <button sc-camel-on-click="{{ t.pick }}" style="height:48px;padding:0 20px;border:0;background:#0F1B35;color:#FFFFFF;font-size:14px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;cursor:pointer">{{ t.label }}</button>
+          </sc-if>
+          <sc-if value="{{ t.idle }}" hint-placeholder-val="{{ true }}">
+            <button sc-camel-on-click="{{ t.pick }}" style="height:48px;padding:0 20px;border:0;background:#FFFFFF;color:#000916;font-size:14px;font-weight:500;letter-spacing:0.04em;text-transform:uppercase;cursor:pointer;box-shadow:inset 0 0 0 1px rgba(15,27,53,.18)" style-hover="box-shadow:inset 0 0 0 2px #568EFF">{{ t.label }}</button>
+          </sc-if>
+        </sc-for>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:16px;align-items:stretch">
+        <div style="background:#0F1B35;padding:clamp(20px,2.5vw,32px);display:flex;flex-direction:column;gap:16px;min-height:440px">
+          <p style="margin:0;color:rgba(255,255,255,.65);font-size:13px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase">O que chega no WhatsApp</p>
+
+          <sc-if value="{{ isAudio }}" hint-placeholder-val="{{ true }}">
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <span style="font-size:13px;color:rgba(255,255,255,.65)">Grupo Fazenda Santa Clara · 06:42</span>
+              <div style="width:100%;max-width:460px;background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:12px 14px;display:flex;flex-direction:column;gap:10px">
+                <span style="font-size:13px;font-weight:600;color:#2459B3">Zé Carlos · encarregado</span>
+                <div style="display:flex;align-items:center;gap:12px">
+                  <button sc-camel-on-click="{{ toggleAudio }}" style="width:46px;height:46px;border-radius:50%;border:0;background:#568EFF;color:#FFFFFF;font-size:15px;cursor:pointer;flex:none;display:flex;align-items:center;justify-content:center" style-hover="background:#0F1B35">{{ playIcon }}</button>
+                  <div style="display:flex;align-items:center;gap:3px;height:40px;flex:1;min-width:0;overflow:hidden">
+                    <sc-for list="{{ wave }}" as="b" hint-placeholder-count="36">
+                      <div style="flex:none;width:3px;border-radius:2px;height:{{ b.h }};background:{{ b.c }}"></div>
+                    </sc-for>
+                  </div>
+                  <span style="font-size:12px;color:#596363;flex:none">{{ audioTime }}</span>
+                </div>
+              </div>
+              <div style="background:#18243B;border:1px solid rgba(255,255,255,.10);padding:16px 18px;display:flex;flex-direction:column;gap:8px">
+                <span style="font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,.65)">Transcrição</span>
+                <sc-if value="{{ hasTranscript }}" hint-placeholder-val="{{ false }}">
+                  <span style="font-size:18px;line-height:1.5;color:#FFFFFF">“{{ transcript }}”</span>
+                </sc-if>
+                <sc-if value="{{ noTranscript }}" hint-placeholder-val="{{ true }}">
+                  <span style="font-size:15px;color:rgba(255,255,255,.65)">Toque no play para ouvir o áudio.</span>
+                </sc-if>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ isTexto }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <span style="font-size:13px;color:rgba(255,255,255,.65)">Grupo Fazenda Santa Clara · 11:15</span>
+              <div style="align-self:flex-start;max-width:460px;background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:12px 14px 8px;display:flex;flex-direction:column;gap:6px">
+                <span style="font-size:13px;font-weight:600;color:#2459B3">{{ produtor }} · produtor</span>
+                <span style="font-size:18px;line-height:1.45">Fechei 80 ton daquele adubo com o Marcos, 30/60/90.</span>
+                <span style="align-self:flex-end;font-size:11px;color:#596363">11:15</span>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ isNota }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <span style="font-size:13px;color:rgba(255,255,255,.65)">E-mail do Posto Trevo, encaminhado ao grupo · 28/09</span>
+              <div style="background:#FFFFFF;padding:18px;display:flex;flex-direction:column;gap:12px;font-family:Menlo,Consolas,monospace;font-size:13px;color:#000916">
+                <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px dashed rgba(15,27,53,.3);padding-bottom:10px"><span style="font-weight:700">DANFE · NF-e nº 18.233</span><span style="color:#596363">Série 1</span></div>
+                <span>Posto Trevo Comércio de Combustíveis Ltda</span>
+                <div style="display:grid;grid-template-columns:minmax(0,1.6fr) repeat(3,minmax(0,1fr));gap:8px;color:#596363;font-size:11px;text-transform:uppercase"><span>Produto</span><span>Qtd</span><span>Unit.</span><span style="text-align:right">Total</span></div>
+                <div style="display:grid;grid-template-columns:minmax(0,1.6fr) repeat(3,minmax(0,1fr));gap:8px"><span>Óleo diesel S10</span><span>3.200 L</span><span>6,10</span><span style="text-align:right">19.520,00</span></div>
+                <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px dashed rgba(15,27,53,.3);padding-top:10px"><span style="color:#596363">Vencimento 28/10/2026</span><span style="font-weight:700">R$ 19.520,00</span></div>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ isExtrato }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <span style="font-size:13px;color:rgba(255,255,255,.65)">Sicredi · conta 34.512-0 · via Open Finance · 30/09</span>
+              <div style="background:#FFFFFF;padding:4px 16px;display:flex;flex-direction:column;font-family:Menlo,Consolas,monospace;font-size:13px;color:#000916">
+                <div style="display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:12px;padding:12px 0;border-bottom:1px solid rgba(15,27,53,.1)"><span style="color:#596363">30/09</span><span>PIX ENV POSTO TREVO LTDA</span><span style="color:#FF003F">−12.480,00</span></div>
+                <div style="display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:12px;padding:12px 0;border-bottom:1px solid rgba(15,27,53,.1)"><span style="color:#596363">30/09</span><span>TED REC CEREALISTA PLANALTO</span><span style="color:#2459B3">+420.000,00</span></div>
+                <div style="display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:12px;padding:12px 0;border-bottom:1px solid rgba(15,27,53,.1)"><span style="color:#596363">30/09</span><span>FOLHA PAGAMENTO SET</span><span style="color:#FF003F">−86.912,40</span></div>
+                <div style="display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:12px;padding:12px 0"><span style="color:#596363">30/09</span><span>TARIFA PACOTE SERVICOS</span><span style="color:#FF003F">−89,00</span></div>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ isContrato }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <span style="font-size:13px;color:rgba(255,255,255,.65)">Conversa com {{ produtor }} · 14:02</span>
+              <div style="width:100%;max-width:460px;background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:10px;display:flex;flex-direction:column;gap:10px">
+                <div style="display:flex;gap:12px;align-items:center;background:#F4F5F7;padding:12px">
+                  <div style="width:44px;height:56px;background:#FFFFFF;border:1px solid rgba(15,27,53,.18);display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px;flex:none"><span style="font-size:11px;font-weight:700;color:#FF003F">PDF</span></div>
+                  <div style="display:flex;flex-direction:column;gap:2px;min-width:0">
+                    <span style="font-size:15px;font-weight:600">contrato-0447-26.pdf</span>
+                    <span style="font-size:13px;color:#596363">4 páginas · 1,2 MB</span>
+                  </div>
+                </div>
+                <span style="font-size:18px;line-height:1.45;padding:0 4px">Assinei esse da Cerealista Planalto. 8 mil sacas a 126.</span>
+                <span style="align-self:flex-end;font-size:11px;color:#596363;padding:0 4px">14:02</span>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+
+        <div style="display:flex;flex-direction:column">
+          <sc-if value="{{ showOut }}" hint-placeholder-val="{{ true }}">
+            <div style="flex:1;background:#FFFFFF;border:1px solid rgba(15,27,53,.18);border-top:4px solid #568EFF;padding:clamp(20px,2.5vw,32px);display:flex;flex-direction:column;gap:16px">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap">
+                <div style="display:flex;flex-direction:column;gap:8px">
+                  <span style="font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#2459B3">O que a WinsVue lança</span>
+                  <span style="font-size:24px;line-height:1.1;font-weight:600;text-transform:uppercase">{{ out.title }}</span>
+                </div>
+                <sc-if value="{{ out.ok }}" hint-placeholder-val="{{ true }}">
+                  <span style="font-size:13px;font-weight:500;background:#DDE6FF;color:#0F1B35;padding:6px 10px">{{ out.status }}</span>
+                </sc-if>
+                <sc-if value="{{ out.pend }}" hint-placeholder-val="{{ false }}">
+                  <span style="font-size:13px;font-weight:500;background:#FDF1D6;color:#0F1B35;padding:6px 10px;box-shadow:inset 3px 0 0 #F0A500">{{ out.status }}</span>
+                </sc-if>
+              </div>
+              <div style="display:flex;flex-direction:column">
+                <sc-for list="{{ out.rows }}" as="r" hint-placeholder-count="6">
+                  <div style="display:grid;grid-template-columns:minmax(110px,160px) minmax(0,1fr);gap:16px;padding:12px 0;border-top:1px solid rgba(15,27,53,.12);font-size:16px;line-height:1.4">
+                    <span style="color:#596363">{{ r.k }}</span>
+                    <span style="font-weight:500;color:#000916">{{ r.v }}</span>
+                  </div>
+                </sc-for>
+              </div>
+              <sc-if value="{{ out.hasNote }}" hint-placeholder-val="{{ false }}">
+                <div style="margin-top:auto;background:#DDE6FF;padding:12px 16px;font-size:15px;line-height:1.5;color:#0F1B35">{{ out.note }}</div>
+              </sc-if>
+            </div>
+          </sc-if>
+          <sc-if value="{{ hideOut }}" hint-placeholder-val="{{ false }}">
+            <div style="flex:1;background:#FFFFFF;border:1px dashed rgba(15,27,53,.35);padding:32px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:12px;min-height:440px">
+              <span style="font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#2459B3">O que a WinsVue lança</span>
+              <span style="font-size:24px;line-height:1.15;font-weight:600;text-transform:uppercase;max-width:360px">O lançamento aparece aqui quando o áudio termina</span>
+              <button sc-camel-on-click="{{ toggleAudio }}" style="margin-top:8px;height:52px;padding:0 28px;border:0;background:#568EFF;color:#FFFFFF;font-weight:600;font-size:15px;text-transform:uppercase;cursor:pointer" style-hover="background:#0F1B35;box-shadow:inset 0 0 0 2px #568EFF">Ouvir o áudio do Zé Carlos</button>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="organizacao" data-screen-label="02 Organização" style="background:#FFFFFF;padding:clamp(56px,7vw,96px) clamp(20px,5.5vw,80px)">
+  <div style="max-width:1440px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:clamp(40px,5vw,80px);align-items:start">
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <p style="margin:0;color:#FF1A6C;font-size:14px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase">02 · Organização</p>
+        <h2 style="margin:0;font-size:clamp(28px,3vw,40px);line-height:1;font-weight:700;text-transform:uppercase;color:#000916;text-wrap:balance">Ela pergunta só o que falta</h2>
+        <img src="assets/c8922da4.svg" width="282" height="10" alt="" style="display:block;max-width:100%;height:auto">
+      </div>
+      <p style="margin:0;font-size:17px;line-height:1.625;color:#373535;max-width:540px;text-wrap:pretty">Saber que você pagou R$ 482 mil não basta. Precisa saber de qual fazenda, cultura e safra, em quantos hectares e quando vence cada parcela. O que dá para deduzir, a WinsVue deduz. O resto ela pergunta uma vez.</p>
+      <div style="background:#E6E7E8;padding:clamp(16px,2.5vw,24px);display:flex;flex-direction:column;gap:10px">
+        <div style="align-self:flex-start;max-width:92%;background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:12px 14px 8px;display:flex;flex-direction:column;gap:6px">
+          <span style="font-size:13px;font-weight:600;color:#2459B3">Grace · WinsVue</span>
+          <span style="font-size:17px;line-height:1.45">Essa compra de R$ 482 mil de adubo com o Marcos é da soja 26/27 da Fazenda Santa Clara?</span>
+          <span style="align-self:flex-end;font-size:11px;color:#596363">11:16</span>
+        </div>
+        <sc-if value="{{ orgAsk }}" hint-placeholder-val="{{ true }}">
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <button sc-camel-on-click="{{ orgSim }}" style="background:#FFFFFF;border:1.5px solid #568EFF;color:#2459B3;font-weight:600;font-size:15px;padding:10px 20px;border-radius:20px;cursor:pointer" style-hover="background:#568EFF;color:#FFFFFF">Sim</button>
+            <button sc-camel-on-click="{{ orgBv }}" style="background:#FFFFFF;border:1.5px solid rgba(15,27,53,.25);color:#000916;font-weight:500;font-size:15px;padding:10px 20px;border-radius:20px;cursor:pointer" style-hover="border-color:#568EFF">Não, é da Boa Vista</button>
+          </div>
+        </sc-if>
+        <sc-if value="{{ orgAnswered }}" hint-placeholder-val="{{ false }}">
+          <div style="align-self:flex-end;background:#0F1B35;color:#FFFFFF;border-radius:14px 4px 14px 14px;padding:10px 14px 6px;display:flex;flex-direction:column;gap:2px;font-size:17px">
+            <span>{{ orgReply }}</span>
+            <span style="align-self:flex-end;font-size:11px;color:rgba(255,255,255,.65)">11:20</span>
+          </div>
+          <div style="align-self:flex-start;max-width:92%;background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:12px 14px 8px;display:flex;flex-direction:column;gap:6px">
+            <span style="font-size:17px;line-height:1.45">Anotado. Na próxima compra de adubo da Agro Sul para a {{ orgFaz }}, eu lanço direto, sem perguntar.</span>
+            <span style="align-self:flex-end;font-size:11px;color:#596363">11:20</span>
+          </div>
+          <button sc-camel-on-click="{{ orgReset }}" style="align-self:flex-start;background:transparent;border:0;padding:4px 0;color:#2459B3;font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:0.04em;cursor:pointer" style-hover="color:#568EFF">Refazer a pergunta</button>
+        </sc-if>
+      </div>
+      <p style="margin:0;font-size:15px;line-height:1.6;color:#596363">Depois de duas respostas iguais, vira regra da fazenda. Você não responde de novo.</p>
+    </div>
+
+    <div style="background:#FFFFFF;border:1px solid rgba(15,27,53,.18);border-top:4px solid #568EFF;padding:clamp(20px,2.5vw,32px);display:flex;flex-direction:column;gap:16px">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <span style="font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#2459B3">Compra · Agro Sul Insumos</span>
+          <span style="font-size:clamp(28px,2.6vw,36px);line-height:1;font-weight:700">R$ 482.300,00</span>
+        </div>
+        <sc-if value="{{ orgAsk }}" hint-placeholder-val="{{ true }}">
+          <span style="font-size:13px;font-weight:500;background:#FDF1D6;color:#0F1B35;padding:6px 10px;box-shadow:inset 3px 0 0 #F0A500">{{ orgPendCount }} campos a confirmar</span>
+        </sc-if>
+        <sc-if value="{{ orgAnswered }}" hint-placeholder-val="{{ false }}">
+          <span style="font-size:13px;font-weight:500;background:#DDE6FF;color:#0F1B35;padding:6px 10px">Completo</span>
+        </sc-if>
+      </div>
+      <div style="display:flex;flex-direction:column">
+        <sc-for list="{{ orgRows }}" as="r" hint-placeholder-count="10">
+          <div style="display:grid;grid-template-columns:minmax(120px,180px) minmax(0,1fr);gap:16px;padding:12px 0;border-top:1px solid rgba(15,27,53,.12);font-size:16px;line-height:1.4;align-items:center">
+            <span style="color:#596363">{{ r.k }}</span>
+            <sc-if value="{{ r.pend }}" hint-placeholder-val="{{ false }}">
+              <span style="justify-self:start;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:#0F1B35;background:#FDF1D6;padding:3px 8px;box-shadow:inset 3px 0 0 #F0A500">a confirmar</span>
+            </sc-if>
+            <sc-if value="{{ r.done }}" hint-placeholder-val="{{ true }}">
+              <span style="font-weight:500;color:{{ r.c }}">{{ r.v }}</span>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="03 Controle" style="background:#0F1B35;padding:clamp(56px,7vw,96px) clamp(20px,5.5vw,80px)">
+  <div style="max-width:1440px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(40px,4vw,56px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:32px 80px;align-items:end">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <p style="margin:0;color:#FF1A6C;font-size:14px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase">03 · Controle</p>
+        <h2 style="margin:0;font-size:clamp(28px,3vw,40px);line-height:1;font-weight:700;text-transform:uppercase;color:#FFFFFF;text-wrap:balance">Você não quer um DRE. Quer saber se está ganhando dinheiro</h2>
+        <img src="assets/c8922da4.svg" width="282" height="10" alt="" style="display:block;max-width:100%;height:auto">
+      </div>
+      <p style="margin:0;font-size:17px;line-height:1.625;color:rgba(255,255,255,.85);max-width:520px;text-wrap:pretty">Por trás tem plano de contas, rateio, provisão e fluxo de caixa projetado, tudo certo. Na frente, a resposta vem em português de fazenda.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:24px;align-items:start">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <sc-for list="{{ questions }}" as="q" hint-placeholder-count="6">
+          <sc-if value="{{ q.active }}" hint-placeholder-val="{{ false }}">
+            <button sc-camel-on-click="{{ q.pick }}" style="text-align:left;background:#568EFF;color:#FFFFFF;border:0;padding:18px 20px;font-size:18px;font-weight:500;line-height:1.3;cursor:pointer;display:flex;justify-content:space-between;gap:12px"><span>{{ q.label }}</span><span>→</span></button>
+          </sc-if>
+          <sc-if value="{{ q.idle }}" hint-placeholder-val="{{ true }}">
+            <button sc-camel-on-click="{{ q.pick }}" style="text-align:left;background:#18243B;color:#FFFFFF;border:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.10);padding:18px 20px;font-size:18px;font-weight:400;line-height:1.3;cursor:pointer" style-hover="box-shadow:inset 0 0 0 2px #568EFF">{{ q.label }}</button>
+          </sc-if>
+        </sc-for>
+      </div>
+      <div style="background:#FFFFFF;padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;gap:22px">
+        <span style="font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#2459B3">Resposta da Grace</span>
+        <span style="font-size:clamp(26px,2.8vw,36px);line-height:1.05;font-weight:700;text-transform:uppercase;color:#000916;text-wrap:balance">{{ ans.lead }}</span>
+        <p style="margin:0;font-size:17px;line-height:1.625;color:#373535;text-wrap:pretty">{{ ans.body }}</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;background:rgba(15,27,53,.14);border:1px solid rgba(15,27,53,.14)">
+          <sc-for list="{{ ans.figs }}" as="f" hint-placeholder-count="3">
+            <div style="background:#FFFFFF;padding:14px 16px;display:flex;flex-direction:column;gap:6px">
+              <span style="font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#596363">{{ f.label }}</span>
+              <span style="font-size:22px;font-weight:700;color:{{ f.c }}">{{ f.value }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid rgba(15,27,53,.12);padding-top:16px;font-size:14px;color:#596363">
+          <span>Calculado sobre 1.284 lançamentos, 212 notas e 4 contas. Atualizado hoje, 06:10.</span>
+          <a href="#rastreio" style="font-weight:600;text-transform:uppercase;letter-spacing:0.04em">Ver de onde veio →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="04 Inteligência" style="background:#E6E7E8;padding:clamp(56px,7vw,96px) clamp(20px,5.5vw,80px)">
+  <div style="max-width:1440px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(40px,4vw,56px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:32px 80px;align-items:end">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <p style="margin:0;color:#FF1A6C;font-size:14px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase">04 · Inteligência</p>
+        <h2 style="margin:0;font-size:clamp(28px,3vw,40px);line-height:1;font-weight:700;text-transform:uppercase;color:#000916;text-wrap:balance">Ela fala antes de você perguntar</h2>
+        <img src="assets/c8922da4.svg" width="282" height="10" alt="" style="display:block;max-width:100%;height:auto">
+      </div>
+      <p style="margin:0;font-size:17px;line-height:1.625;color:#373535;max-width:520px;text-wrap:pretty">Sistema que só responde é uma tela melhor. A WinsVue acompanha caixa, custo e recebíveis todo dia e avisa quando alguma coisa sai do trilho.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:24px;align-items:stretch">
+      <div style="background:#FFFFFF;border:1px solid rgba(15,27,53,.14);padding:clamp(24px,2.5vw,32px);display:flex;flex-direction:column;gap:24px">
+        <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline">
+          <h3 style="margin:0;font-size:20px;font-weight:600;text-transform:uppercase">Caixa dos próximos 35 dias</h3>
+          <span style="font-size:14px;color:#596363">Saldo hoje R$ 340 mil</span>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:10px;min-width:0">
+            <div style="width:100%;height:170px;display:flex;align-items:flex-end;justify-content:center;gap:4px;border-bottom:1px solid rgba(15,27,53,.35)">
+              <div style="width:clamp(10px,1.6vw,22px);height:87px;background:#568EFF"></div>
+              <div style="width:clamp(10px,1.6vw,22px);height:140px;background:#0F1B35"></div>
+            </div>
+            <span style="font-size:12px;color:#596363;text-align:center">5–11 out</span>
+            <span style="font-size:15px;font-weight:600;color:#2459B3">+20 mil</span>
+          </div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:10px;min-width:0">
+            <div style="width:100%;height:170px;display:flex;align-items:flex-end;justify-content:center;gap:4px;border-bottom:1px solid rgba(15,27,53,.35)">
+              <div style="width:clamp(10px,1.6vw,22px);height:2px;background:#568EFF"></div>
+              <div style="width:clamp(10px,1.6vw,22px);height:52px;background:#0F1B35"></div>
+            </div>
+            <span style="font-size:12px;color:#596363;text-align:center">12–18 out</span>
+            <span style="font-size:15px;font-weight:600;color:#FF003F">−290 mil</span>
+          </div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:10px;min-width:0">
+            <div style="width:100%;height:170px;display:flex;align-items:flex-end;justify-content:center;gap:4px;border-bottom:1px solid rgba(15,27,53,.35)">
+              <div style="width:clamp(10px,1.6vw,22px);height:72px;background:#568EFF"></div>
+              <div style="width:clamp(10px,1.6vw,22px);height:87px;background:#0F1B35"></div>
+            </div>
+            <span style="font-size:12px;color:#596363;text-align:center">19–25 out</span>
+            <span style="font-size:15px;font-weight:600;color:#FF003F">−380 mil</span>
+          </div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:10px;min-width:0">
+            <div style="width:100%;height:170px;display:flex;align-items:flex-end;justify-content:center;gap:4px;border-bottom:1px solid rgba(15,27,53,.35)">
+              <div style="width:clamp(10px,1.6vw,22px);height:150px;background:#568EFF"></div>
+              <div style="width:clamp(10px,1.6vw,22px);height:160px;background:#0F1B35"></div>
+            </div>
+            <span style="font-size:12px;color:#596363;text-align:center">26 out–1 nov</span>
+            <span style="font-size:15px;font-weight:600;color:#FF003F">−440 mil</span>
+          </div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:10px;min-width:0">
+            <div style="width:100%;height:170px;display:flex;align-items:flex-end;justify-content:center;gap:4px;border-bottom:1px solid rgba(15,27,53,.35)">
+              <div style="width:clamp(10px,1.6vw,22px);height:2px;background:#568EFF"></div>
+              <div style="width:clamp(10px,1.6vw,22px);height:30px;background:#0F1B35"></div>
+            </div>
+            <span style="font-size:12px;color:#596363;text-align:center">2–8 nov</span>
+            <span style="font-size:15px;font-weight:600;color:#FF003F">−620 mil</span>
+          </div>
+        </div>
+        <div style="display:flex;gap:20px;flex-wrap:wrap;font-size:14px;color:#373535">
+          <span style="display:flex;align-items:center;gap:8px"><span style="width:12px;height:12px;background:#568EFF"></span>Entra (já contratado)</span>
+          <span style="display:flex;align-items:center;gap:8px"><span style="width:12px;height:12px;background:#0F1B35"></span>Vence</span>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;border-top:1px solid rgba(15,27,53,.12);padding-top:18px">
+          <div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#596363">Vencem</span><span style="font-size:22px;font-weight:700">R$ 2,81 mi</span></div>
+          <div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#596363">Entram</span><span style="font-size:22px;font-weight:700">R$ 1,85 mi</span></div>
+          <div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#596363">Faltam</span><span style="font-size:22px;font-weight:700;color:#FF003F">R$ 620 mil</span></div>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px">
+        <article style="background:#FFFFFF;border:1px solid rgba(15,27,53,.14);border-top:4px solid #568EFF;padding:24px;display:flex;flex-direction:column;gap:12px">
+          <span style="font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#2459B3">Caixa · hoje, 07:00</span>
+          <span style="font-size:18px;line-height:1.5;color:#000916;text-wrap:pretty">Nos próximos 35 dias vencem <strong style="font-weight:600">R$ 2,8 milhões</strong>. Com os recebimentos já contratados, faltam aproximadamente <strong style="font-weight:600">R$ 620 mil</strong>.</span>
+        </article>
+        <article style="background:#FFFFFF;border:1px solid rgba(15,27,53,.14);border-top:4px solid #568EFF;padding:24px;display:flex;flex-direction:column;gap:12px">
+          <span style="font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#2459B3">Custo · ontem</span>
+          <span style="font-size:18px;line-height:1.5;color:#000916;text-wrap:pretty">Seu diesel está <strong style="font-weight:600">R$ 47/ha</strong> acima da safra passada. A maior diferença está na Fazenda Boa Vista.</span>
+        </article>
+        <article style="background:#FFFFFF;border:1px solid rgba(15,27,53,.14);border-top:4px solid #568EFF;padding:24px;display:flex;flex-direction:column;gap:12px">
+          <span style="font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#2459B3">Despesa · 28/09</span>
+          <span style="font-size:18px;line-height:1.5;color:#000916;text-wrap:pretty">O administrativo cresceu <strong style="font-weight:600">19%</strong>, enquanto sua área plantada aumentou apenas 4%.</span>
+        </article>
+        <article style="background:#FFFFFF;border:1px solid rgba(15,27,53,.14);border-top:4px solid #568EFF;padding:24px;display:flex;flex-direction:column;gap:12px">
+          <span style="font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#2459B3">Recebível · 24/09</span>
+          <span style="font-size:18px;line-height:1.5;color:#000916;text-wrap:pretty">Você tem <strong style="font-weight:600">R$ 1,4 milhão</strong> a receber vencido há mais de 30 dias.</span>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mercado" data-screen-label="04b De olho no mercado" style="background:#FFFFFF;padding:clamp(56px,7vw,96px) clamp(20px,5.5vw,80px);scroll-margin-top:88px">
+  <div style="max-width:1440px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(40px,4vw,56px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:32px 80px;align-items:end">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <p style="margin:0;color:#FF1A6C;font-size:14px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase">De olho no mercado</p>
+        <h2 style="margin:0;font-size:clamp(28px,3vw,40px);line-height:1;font-weight:700;text-transform:uppercase;color:#000916;text-wrap:balance">Ela também olha para fora da porteira</h2>
+        <img src="assets/c8922da4.svg" width="282" height="10" alt="" style="display:block;max-width:100%;height:auto">
+      </div>
+      <p style="margin:0;font-size:17px;line-height:1.625;color:#373535;max-width:540px;text-wrap:pretty">Preço de insumo, cotação, câmbio, petróleo, notícia. E o que fazendas parecidas com a sua estão pagando. A WinsVue acompanha tudo isso todo dia e só fala quando mexe com a sua fazenda.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:24px;align-items:start">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <sc-for list="{{ alerts }}" as="a" hint-placeholder-count="3">
+          <sc-if value="{{ a.active }}" hint-placeholder-val="{{ false }}">
+            <button sc-camel-on-click="{{ a.pick }}" style="text-align:left;border:0;background:#0F1B35;color:#FFFFFF;padding:20px 22px;display:flex;flex-direction:column;gap:10px;cursor:pointer;box-shadow:inset 4px 0 0 #568EFF">
+              <span style="font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#568EFF">{{ a.tag }}</span>
+              <span style="font-size:17px;line-height:1.5">{{ a.msg }}</span>
+            </button>
+          </sc-if>
+          <sc-if value="{{ a.idle }}" hint-placeholder-val="{{ true }}">
+            <button sc-camel-on-click="{{ a.pick }}" style="text-align:left;border:0;background:#FFFFFF;color:#000916;padding:20px 22px;display:flex;flex-direction:column;gap:10px;cursor:pointer;box-shadow:inset 0 0 0 1px rgba(15,27,53,.18)" style-hover="box-shadow:inset 0 0 0 2px #568EFF">
+              <span style="font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#2459B3">{{ a.tag }}</span>
+              <span style="font-size:17px;line-height:1.5;color:#373535">{{ a.msg }}</span>
+            </button>
+          </sc-if>
+        </sc-for>
+      </div>
+
+      <div style="border:1px solid rgba(15,27,53,.18);border-top:4px solid #568EFF;padding:clamp(24px,2.5vw,32px);display:flex;flex-direction:column;gap:22px">
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <span style="font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#2459B3">Por que isso chegou para você</span>
+          <span style="font-size:18px;line-height:1.55;color:#000916;text-wrap:pretty">{{ al.why }}</span>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;background:rgba(15,27,53,.14);border:1px solid rgba(15,27,53,.14)">
+          <sc-for list="{{ al.figs }}" as="f" hint-placeholder-count="3">
+            <div style="background:#FFFFFF;padding:14px 16px;display:flex;flex-direction:column;gap:6px">
+              <span style="font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#596363">{{ f.label }}</span>
+              <span style="font-size:22px;font-weight:700;color:{{ f.c }}">{{ f.value }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;border-top:1px solid rgba(15,27,53,.12);padding-top:16px">
+          <span style="font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#596363">De onde veio</span>
+          <span style="font-size:15px;line-height:1.6;color:#373535">{{ al.src }}</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px">
+          <sc-for list="{{ al.actions }}" as="act" hint-placeholder-count="2">
+            <sc-if value="{{ act.active }}" hint-placeholder-val="{{ false }}">
+              <button sc-camel-on-click="{{ act.pick }}" style="height:48px;padding:0 22px;border:0;background:#568EFF;color:#FFFFFF;font-weight:600;font-size:15px;text-transform:uppercase;cursor:pointer">{{ act.label }}</button>
+            </sc-if>
+            <sc-if value="{{ act.idle }}" hint-placeholder-val="{{ true }}">
+              <button sc-camel-on-click="{{ act.pick }}" style="height:48px;padding:0 22px;border:0;background:transparent;color:#0F1B35;font-weight:600;font-size:15px;text-transform:uppercase;cursor:pointer;box-shadow:inset 0 0 0 2px #0F1B35" style-hover="color:#2459B3;box-shadow:inset 0 0 0 2px #568EFF">{{ act.label }}</button>
+            </sc-if>
+          </sc-for>
+        </div>
+        <sc-if value="{{ hasAlertReply }}" hint-placeholder-val="{{ false }}">
+          <div style="background:#E6E7E8;padding:14px">
+            <div style="background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:12px 14px 8px;display:flex;flex-direction:column;gap:6px;max-width:520px">
+              <span style="font-size:13px;font-weight:600;color:#2459B3">Grace · WinsVue</span>
+              <span style="font-size:16px;line-height:1.5">{{ alertReply }}</span>
+              <span style="align-self:flex-end;font-size:11px;color:#596363">agora</span>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:24px;border-top:1px solid rgba(15,27,53,.18);padding-top:clamp(32px,4vw,48px)">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:16px 80px;align-items:end">
+        <h3 style="margin:0;font-size:clamp(22px,2.2vw,28px);line-height:1.05;font-weight:700;text-transform:uppercase;color:#000916">Comparar sem expor ninguém</h3>
+        <p style="margin:0;font-size:16px;line-height:1.625;color:#373535;max-width:540px">A comparação com outras fazendas segue a LGPD desde o desenho. O que sai de cada fazenda é só o número agregado.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px">
+        <article style="background:#E6E7E8;padding:28px;display:flex;flex-direction:column;gap:14px">
+          <span style="font-size:clamp(32px,3vw,44px);line-height:1;font-weight:700;color:#2459B3">01</span>
+          <h4 style="margin:0;font-size:18px;line-height:1.25;font-weight:600;text-transform:uppercase;color:#000916">Só entra quem quiser</h4>
+          <p style="margin:0;font-size:15px;line-height:1.625;color:#373535">A comparação é opcional e depende do seu consentimento. Quem não participa não entra na média.</p>
+        </article>
+        <article style="background:#E6E7E8;padding:28px;display:flex;flex-direction:column;gap:14px">
+          <span style="font-size:clamp(32px,3vw,44px);line-height:1;font-weight:700;color:#2459B3">02</span>
+          <h4 style="margin:0;font-size:18px;line-height:1.25;font-weight:600;text-transform:uppercase;color:#000916">Ninguém é identificado</h4>
+          <p style="margin:0;font-size:15px;line-height:1.625;color:#373535">Nome, CPF, CNPJ, fornecedor e localização exata saem antes do cruzamento. A cidade vira região.</p>
+        </article>
+        <article style="background:#E6E7E8;padding:28px;display:flex;flex-direction:column;gap:14px">
+          <span style="font-size:clamp(32px,3vw,44px);line-height:1;font-weight:700;color:#2459B3">03</span>
+          <h4 style="margin:0;font-size:18px;line-height:1.25;font-weight:600;text-transform:uppercase;color:#000916">Média de pelo menos 10</h4>
+          <p style="margin:0;font-size:15px;line-height:1.625;color:#373535">Só existe comparação quando há 10 fazendas ou mais no mesmo perfil. Com menos, o número não aparece.</p>
+        </article>
+        <article style="background:#E6E7E8;padding:28px;display:flex;flex-direction:column;gap:14px">
+          <span style="font-size:clamp(32px,3vw,44px);line-height:1;font-weight:700;color:#2459B3">04</span>
+          <h4 style="margin:0;font-size:18px;line-height:1.25;font-weight:600;text-transform:uppercase;color:#000916">Cada fazenda isolada</h4>
+          <p style="margin:0;font-size:15px;line-height:1.625;color:#373535">Ninguém vê lançamento, nota ou conversa de outra fazenda. Nem a WinsVue usa isso fora da sua conta.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="decisao" data-screen-label="05 Decisão" style="background:#0F1B35;color:#FFFFFF;padding:clamp(56px,7vw,96px) clamp(20px,5.5vw,80px);scroll-margin-top:88px">
+  <div style="max-width:1440px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(40px,4vw,56px)">
+    <div style="display:flex;flex-direction:column;gap:24px;max-width:900px">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <p style="margin:0;color:#FF1A6C;font-size:14px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase">05 · Decisão</p>
+        <h2 style="margin:0;font-size:clamp(30px,3.6vw,48px);line-height:1;font-weight:700;text-transform:uppercase;color:#FFFFFF;text-wrap:balance">Não tem dashboard. Não tem 47 gráficos. Não tem curso. <span style="color:#568EFF">Não tem manual.</span></h2>
+        <img src="assets/c8922da4.svg" width="282" height="10" alt="" style="display:block;max-width:100%;height:auto">
+      </div>
+      <p style="margin:0;font-size:17px;line-height:1.625;color:rgba(255,255,255,.85);max-width:620px;text-wrap:pretty">Toda segunda, às 7h, chegam três itens no WhatsApp. Se alguma coisa vence ou entra no meio da semana, ela avisa no dia. A conta vem pronta; a decisão continua sua.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:24px;align-items:stretch">
+      <div style="background:#18243B;border:1px solid rgba(255,255,255,.10);border-top:4px solid #568EFF;padding:clamp(24px,2.5vw,32px);display:flex;flex-direction:column;gap:18px">
+        <span style="font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#568EFF">Item 3 do briefing de segunda</span>
+        <span style="font-size:clamp(22px,2.2vw,28px);line-height:1.1;font-weight:600;text-transform:uppercase">Proposta da Grãos do Norte: 10 mil sacas a R$ 128</span>
+        <div style="display:flex;flex-direction:column">
+          <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;padding:13px 0;border-top:1px solid rgba(255,255,255,.10);font-size:16px"><span style="color:rgba(255,255,255,.75)">Pagamento</span><span style="font-weight:500;text-align:right">Antecipado, em 10/11</span></div>
+          <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;padding:13px 0;border-top:1px solid rgba(255,255,255,.10);font-size:16px"><span style="color:rgba(255,255,255,.75)">Compromissos de novembro</span><span style="font-weight:500;text-align:right">R$ 1,21 mi · cobre</span></div>
+          <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;padding:13px 0;border-top:1px solid rgba(255,255,255,.10);font-size:16px"><span style="color:rgba(255,255,255,.75)">Margem nessas sacas</span><span style="font-weight:500;text-align:right">R$ 34/sc sobre o custo</span></div>
+          <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;padding:13px 0;border-top:1px solid rgba(255,255,255,.10);border-bottom:1px solid rgba(255,255,255,.10);font-size:16px"><span style="color:rgba(255,255,255,.75)">Produção sem preço depois</span><span style="font-weight:500;text-align:right">72%</span></div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:18px;justify-content:center">
+        <span style="font-size:22px;font-weight:600;text-transform:uppercase">O que você quer fazer?</span>
+        <div style="display:flex;flex-wrap:wrap;gap:10px">
+          <sc-for list="{{ decisoes }}" as="d" hint-placeholder-count="3">
+            <sc-if value="{{ d.active }}" hint-placeholder-val="{{ false }}">
+              <button sc-camel-on-click="{{ d.pick }}" style="height:52px;padding:0 24px;border:0;background:#568EFF;color:#FFFFFF;font-weight:600;font-size:15px;text-transform:uppercase;cursor:pointer">{{ d.label }}</button>
+            </sc-if>
+            <sc-if value="{{ d.idle }}" hint-placeholder-val="{{ true }}">
+              <button sc-camel-on-click="{{ d.pick }}" style="height:52px;padding:0 24px;border:0;background:transparent;color:#FFFFFF;font-weight:600;font-size:15px;text-transform:uppercase;cursor:pointer;box-shadow:inset 0 0 0 2px rgba(255,255,255,.35)" style-hover="box-shadow:inset 0 0 0 2px #568EFF">{{ d.label }}</button>
+            </sc-if>
+          </sc-for>
+        </div>
+        <sc-if value="{{ hasDecisao }}" hint-placeholder-val="{{ false }}">
+          <div style="background:#FFFFFF;color:#000916;border-radius:4px 14px 14px 14px;padding:14px 16px 8px;display:flex;flex-direction:column;gap:6px;max-width:520px">
+            <span style="font-size:13px;font-weight:600;color:#2459B3">Grace · WinsVue</span>
+            <span style="font-size:17px;line-height:1.45">{{ decisaoMsg }}</span>
+            <span style="align-self:flex-end;font-size:11px;color:#596363">07:12</span>
+          </div>
+        </sc-if>
+        <sc-if value="{{ noDecisao }}" hint-placeholder-val="{{ true }}">
+          <span style="font-size:16px;line-height:1.6;color:rgba(255,255,255,.75)">A WinsVue não decide por você. Ela anota o que você decidiu e atualiza o caixa.</span>
+        </sc-if>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rastreio" data-screen-label="Confiança" style="background:#FFFFFF;padding:clamp(56px,7vw,96px) clamp(20px,5.5vw,80px);scroll-margin-top:88px">
+  <div style="max-width:1440px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(40px,4vw,56px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:32px 80px;align-items:end">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <p style="margin:0;color:#FF1A6C;font-size:14px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase">Confiança</p>
+        <h2 style="margin:0;font-size:clamp(28px,3vw,40px);line-height:1;font-weight:700;text-transform:uppercase;color:#000916;text-wrap:balance">Todo número tem endereço</h2>
+        <img src="assets/c8922da4.svg" width="282" height="10" alt="" style="display:block;max-width:100%;height:auto">
+      </div>
+      <p style="margin:0;font-size:17px;line-height:1.625;color:#373535;max-width:520px;text-wrap:pretty">Um número errado e você volta para a planilha. Por isso cada valor do briefing abre a lista do que está por trás: nota, extrato, contrato ou áudio, com data e quem mandou.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:24px;align-items:start">
+      <div style="border:1px solid rgba(15,27,53,.18);border-top:4px solid #568EFF;padding:clamp(24px,2.5vw,32px);display:flex;flex-direction:column;gap:20px">
+        <span style="font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#2459B3">Briefing de segunda · caixa</span>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <span style="font-size:clamp(32px,3.4vw,44px);line-height:1;font-weight:700;text-transform:uppercase">Faltam R$ 620 mil</span>
+          <span style="font-size:17px;color:#373535">nos próximos 35 dias</span>
+        </div>
+        <button sc-camel-on-click="{{ toggleTrace }}" style="align-self:flex-start;height:48px;padding:0 22px;border:0;background:transparent;color:#0F1B35;font-weight:600;font-size:15px;text-transform:uppercase;cursor:pointer;box-shadow:inset 0 0 0 2px #0F1B35" style-hover="color:#2459B3;box-shadow:inset 0 0 0 2px #568EFF">{{ traceLabel }}</button>
+        <sc-if value="{{ traceOpen }}" hint-placeholder-val="{{ true }}">
+          <div style="display:flex;flex-direction:column">
+            <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;padding:14px 0;border-top:1px solid rgba(15,27,53,.12)">
+              <span style="font-size:16px;font-weight:500">Saldo em conta hoje</span>
+              <span style="font-size:16px;font-weight:600;text-align:right;color:#2459B3">+ 340 mil</span>
+              <span style="font-size:14px;color:#596363">Extrato · Sicredi, Banco do Brasil e Sicoob</span>
+              <span style="font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:#596363;text-align:right">conferido</span>
+            </div>
+            <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;padding:14px 0;border-top:1px solid rgba(15,27,53,.12)">
+              <span style="font-size:16px;font-weight:500">Recebimentos contratados</span>
+              <span style="font-size:16px;font-weight:600;text-align:right;color:#2459B3">+ 1,85 mi</span>
+              <span style="font-size:14px;color:#596363">3 contratos de venda · PDF enviado no grupo</span>
+              <span style="font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:#596363;text-align:right">conferido</span>
+            </div>
+            <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;padding:14px 0;border-top:1px solid rgba(15,27,53,.12)">
+              <span style="font-size:16px;font-weight:500">Vencimentos</span>
+              <span style="font-size:16px;font-weight:600;text-align:right;color:#FF003F">− 2,81 mi</span>
+              <span style="font-size:14px;color:#596363">14 parcelas · 6 notas · 2 contratos de insumo</span>
+              <span style="font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:#B07800;text-align:right">2 pendentes</span>
+            </div>
+            <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;padding:14px 0;border-top:2px solid #0F1B35">
+              <span style="font-size:16px;font-weight:700;text-transform:uppercase">Resultado</span>
+              <span style="font-size:16px;font-weight:700;text-align:right;color:#FF003F">− 620 mil</span>
+            </div>
+            <div style="background:#FDF1D6;color:#0F1B35;padding:12px 16px;font-size:15px;line-height:1.5;box-shadow:inset 3px 0 0 #F0A500">2 lançamentos (R$ 38 mil) aguardam confirmação do administrativo. Se confirmados, o número passa para R$ 658 mil.</div>
+          </div>
+        </sc-if>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px">
+        <article style="border:1px solid rgba(15,27,53,.14);background:#FFFFFF;padding:28px;display:flex;flex-direction:column;gap:14px">
+          <span style="font-size:clamp(32px,3vw,44px);line-height:1;font-weight:700;color:#568EFF">01</span>
+          <h3 style="margin:0;font-size:19px;line-height:1.25;font-weight:600;text-transform:uppercase">A conta é feita por regra</h3>
+          <p style="margin:0;font-size:15px;line-height:1.625;color:#596363">O cálculo roda sobre os lançamentos, sempre do mesmo jeito. A leitura de áudio e documento só extrai e explica. Não inventa número.</p>
+        </article>
+        <article style="border:1px solid rgba(15,27,53,.14);background:#FFFFFF;padding:28px;display:flex;flex-direction:column;gap:14px">
+          <span style="font-size:clamp(32px,3vw,44px);line-height:1;font-weight:700;color:#568EFF">02</span>
+          <h3 style="margin:0;font-size:19px;line-height:1.25;font-weight:600;text-transform:uppercase">Cada lançamento tem origem</h3>
+          <p style="margin:0;font-size:15px;line-height:1.625;color:#596363">Nota, extrato, contrato ou áudio, com data, hora e quem mandou.</p>
+        </article>
+        <article style="border:1px solid rgba(15,27,53,.14);background:#FFFFFF;padding:28px;display:flex;flex-direction:column;gap:14px">
+          <span style="font-size:clamp(32px,3vw,44px);line-height:1;font-weight:700;color:#568EFF">03</span>
+          <h3 style="margin:0;font-size:19px;line-height:1.25;font-weight:600;text-transform:uppercase">O que falta aparece como pendente</h3>
+          <p style="margin:0;font-size:15px;line-height:1.625;color:#596363">Nada entra no briefing como certo antes de estar conferido.</p>
+        </article>
+        <article style="border:1px solid rgba(15,27,53,.14);background:#FFFFFF;padding:28px;display:flex;flex-direction:column;gap:14px">
+          <span style="font-size:clamp(32px,3vw,44px);line-height:1;font-weight:700;color:#568EFF">04</span>
+          <h3 style="margin:0;font-size:19px;line-height:1.25;font-weight:600;text-transform:uppercase">Gente conferindo junto</h3>
+          <p style="margin:0;font-size:15px;line-height:1.625;color:#596363">No piloto, uma pessoa da WinsVue revisa cada lançamento com você e com o seu contador.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Jornada da compra" style="background:#E6E7E8;padding:clamp(56px,7vw,96px) clamp(20px,5.5vw,80px)">
+  <div style="max-width:1440px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(40px,4vw,56px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:32px 80px;align-items:end">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <p style="margin:0;color:#FF1A6C;font-size:14px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase">Por onde começa</p>
+        <h2 style="margin:0;font-size:clamp(28px,3vw,40px);line-height:1;font-weight:700;text-transform:uppercase;color:#000916;text-wrap:balance">A compra é a porta de entrada dos números</h2>
+        <img src="assets/c8922da4.svg" width="282" height="10" alt="" style="display:block;max-width:100%;height:auto">
+      </div>
+      <p style="margin:0;font-size:17px;line-height:1.625;color:#373535;max-width:520px;text-wrap:pretty">Cada insumo comprado puxa tudo o que vem depois: nota, parcela, estoque, custo por hectare, custo por saca. A WinsVue começa pela compra e vai até o fechamento da safra.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:16px">
+      <article style="background:#FFFFFF;border:1px solid rgba(15,27,53,.14);padding:28px 24px;display:flex;flex-direction:column;gap:14px">
+        <span style="font-size:clamp(32px,3vw,44px);line-height:1;font-weight:700;color:#568EFF">01</span>
+        <h3 style="margin:0;font-size:19px;line-height:1.2;font-weight:600;text-transform:uppercase">Antes da compra</h3>
+        <div style="display:flex;flex-direction:column;font-size:15px;color:#596363"><span style="padding:7px 0;border-top:1px solid rgba(15,27,53,.12)">Cotação</span><span style="padding:7px 0;border-top:1px solid rgba(15,27,53,.12)">Comparação</span><span style="padding:7px 0;border-top:1px solid rgba(15,27,53,.12)">Negociação</span><span style="padding:7px 0;border-top:1px solid rgba(15,27,53,.12)">Condição financeira</span></div>
+      </article>
+      <article style="background:#FFFFFF;border:1px solid rgba(15,27,53,.14);padding:28px 24px;display:flex;flex-direction:column;gap:14px">
+        <span style="font-size:clamp(32px,3vw,44px);line-height:1;font-weight:700;color:#568EFF">02</span>
+        <h3 style="margin:0;font-size:19px;line-height:1.2;font-weight:600;text-transform:uppercase">Compra</h3>
+        <div style="display:flex;flex-direction:column;font-size:15px;color:#596363"><span style="padding:7px 0;border-top:1px solid rgba(15,27,53,.12)">Pedido</span><span style="padding:7px 0;border-top:1px solid rgba(15,27,53,.12)">Contrato</span><span style="padding:7px 0;border-top:1px solid rgba(15,27,53,.12)">Nota fiscal</span><span style="padding:7px 0;border-top:1px solid rgba(15,27,53,.12)">Vencimentos</span><span style="padding:7px 0;border-top:1px solid rgba(15,27,53,.12)">Entrega</span></div>
+      </article>
+      <article style="background:#FFFFFF;border:1px solid rgba(15,27,53,.14);padding:28px 24px;display:flex;flex-direction:column;gap:14px">
+        <span style="font-size:clamp(32px,3vw,44px);line-height:1;font-weight:700;color:#568EFF">03</span>
+        <h3 style="margin:0;font-size:19px;line-height:1.2;font-weight:600;text-transform:uppercase">Depois da compra</h3>
+        <div style="display:flex;flex-direction:column;font-size:15px;color:#596363"><span style="padding:7px 0;border-top:1px solid rgba(15,27,53,.12)">Estoque</span><span style="padding:7px 0;border-top:1px solid rgba(15,27,53,.12)">Utilização</span><span style="padding:7px 0;border-top:1px solid rgba(15,27,53,.12)">Custo por hectare</span><span style="padding:7px 0;border-top:1px solid rgba(15,27,53,.12)">Contas a pagar</span><span style="padding:7px 0;border-top:1px solid rgba(15,27,53,.12)">Caixa</span></div>
+      </article>
+      <article style="background:#FFFFFF;border:1px solid rgba(15,27,53,.14);padding:28px 24px;display:flex;flex-direction:column;gap:14px">
+        <span style="font-size:clamp(32px,3vw,44px);line-height:1;font-weight:700;color:#568EFF">04</span>
+        <h3 style="margin:0;font-size:19px;line-height:1.2;font-weight:600;text-transform:uppercase">Produção</h3>
+        <div style="display:flex;flex-direction:column;font-size:15px;color:#596363"><span style="padding:7px 0;border-top:1px solid rgba(15,27,53,.12)">Custo real</span><span style="padding:7px 0;border-top:1px solid rgba(15,27,53,.12)">Custo por saca</span><span style="padding:7px 0;border-top:1px solid rgba(15,27,53,.12)">Margem esperada</span></div>
+      </article>
+      <article style="background:#FFFFFF;border:1px solid rgba(15,27,53,.14);padding:28px 24px;display:flex;flex-direction:column;gap:14px">
+        <span style="font-size:clamp(32px,3vw,44px);line-height:1;font-weight:700;color:#568EFF">05</span>
+        <h3 style="margin:0;font-size:19px;line-height:1.2;font-weight:600;text-transform:uppercase">Venda</h3>
+        <div style="display:flex;flex-direction:column;font-size:15px;color:#596363"><span style="padding:7px 0;border-top:1px solid rgba(15,27,53,.12)">Propostas</span><span style="padding:7px 0;border-top:1px solid rgba(15,27,53,.12)">Volume comprometido</span><span style="padding:7px 0;border-top:1px solid rgba(15,27,53,.12)">Recebíveis</span><span style="padding:7px 0;border-top:1px solid rgba(15,27,53,.12)">Margem</span><span style="padding:7px 0;border-top:1px solid rgba(15,27,53,.12)">Caixa futuro</span></div>
+      </article>
+      <article style="background:#0F1B35;border:1px solid #0F1B35;padding:28px 24px;display:flex;flex-direction:column;gap:14px">
+        <span style="font-size:clamp(32px,3vw,44px);line-height:1;font-weight:700;color:#568EFF">06</span>
+        <h3 style="margin:0;font-size:19px;line-height:1.2;font-weight:600;text-transform:uppercase;color:#FFFFFF">Fechamento</h3>
+        <div style="display:flex;flex-direction:column;font-size:15px;color:rgba(255,255,255,.75)"><span style="padding:7px 0;border-top:1px solid rgba(255,255,255,.10)">Resultado real da safra</span><span style="padding:7px 0;border-top:1px solid rgba(255,255,255,.10)">Onde ganhou</span><span style="padding:7px 0;border-top:1px solid rgba(255,255,255,.10)">Onde perdeu</span><span style="padding:7px 0;border-top:1px solid rgba(255,255,255,.10)">Memória para a próxima</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="integracoes" data-screen-label="Integrações" style="background:#FFFFFF;padding:clamp(56px,7vw,96px) clamp(20px,5.5vw,80px);scroll-margin-top:88px">
+  <div style="max-width:1440px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(40px,4vw,56px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:32px 80px;align-items:end">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <p style="margin:0;color:#FF1A6C;font-size:14px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase">Integrações</p>
+        <h2 style="margin:0;font-size:clamp(28px,3vw,40px);line-height:1;font-weight:700;text-transform:uppercase;color:#000916;text-wrap:balance">Funciona com o que a fazenda já usa</h2>
+        <img src="assets/c8922da4.svg" width="282" height="10" alt="" style="display:block;max-width:100%;height:auto">
+      </div>
+      <p style="margin:0;font-size:17px;line-height:1.625;color:#373535;max-width:520px;text-wrap:pretty">Sem aplicativo novo, sem treinamento. O que o banco e a nota já dizem não depende de ninguém lembrar de mandar.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px">
+      <article style="border:1px solid rgba(15,27,53,.18);border-top:4px solid #568EFF;padding:28px;display:flex;flex-direction:column;gap:12px">
+        <h3 style="margin:0;font-size:22px;font-weight:600;text-transform:uppercase">WhatsApp</h3>
+        <p style="margin:0;font-size:15px;line-height:1.625;color:#596363">Grupo da fazenda com produtor, administrativo e encarregado. Áudio, foto, PDF e texto. Lembrete quando falta algo: “saiu abastecimento ontem?”</p>
+      </article>
+      <article style="border:1px solid rgba(15,27,53,.18);border-top:4px solid #568EFF;padding:28px;display:flex;flex-direction:column;gap:12px">
+        <h3 style="margin:0;font-size:22px;font-weight:600;text-transform:uppercase">Bancos</h3>
+        <p style="margin:0;font-size:15px;line-height:1.625;color:#596363">Open Finance com todas as contas da fazenda, inclusive cooperativas como Sicredi e Sicoob. Ou arquivo OFX, se preferir.</p>
+      </article>
+      <article style="border:1px solid rgba(15,27,53,.18);border-top:4px solid #568EFF;padding:28px;display:flex;flex-direction:column;gap:12px">
+        <h3 style="margin:0;font-size:22px;font-weight:600;text-transform:uppercase">Notas fiscais</h3>
+        <p style="margin:0;font-size:15px;line-height:1.625;color:#596363">Direto da SEFAZ com o seu certificado digital ou procuração. Ou o PDF encaminhado pelo fornecedor.</p>
+      </article>
+      <article style="border:1px solid rgba(15,27,53,.18);border-top:4px solid #568EFF;padding:28px;display:flex;flex-direction:column;gap:12px">
+        <h3 style="margin:0;font-size:22px;font-weight:600;text-transform:uppercase">Contratos</h3>
+        <p style="margin:0;font-size:15px;line-height:1.625;color:#596363">Compra de insumo a prazo, barter, fixação de venda e CPR. Em PDF, foto ou dito em áudio.</p>
+      </article>
+      <article style="border:1px solid rgba(15,27,53,.18);border-top:4px solid #568EFF;padding:28px;display:flex;flex-direction:column;gap:12px">
+        <h3 style="margin:0;font-size:22px;font-weight:600;text-transform:uppercase">Seu contador</h3>
+        <p style="margin:0;font-size:15px;line-height:1.625;color:#596363">Lançamentos classificados e prontos para o LCDPR. O contador recebe dado limpo, mais cedo, e continua sendo o seu contador.</p>
+      </article>
+      <article style="background:#0F1B35;padding:28px;display:flex;flex-direction:column;gap:12px">
+        <h3 style="margin:0;font-size:22px;font-weight:600;text-transform:uppercase;color:#FFFFFF">Sigilo e LGPD</h3>
+        <p style="margin:0;font-size:15px;line-height:1.625;color:rgba(255,255,255,.85)">Acesso ao banco só com o seu consentimento, por agregador regulado pelo Banco Central. Dados de cada fazenda isolados e contrato de tratamento assinado com você e o seu contador.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Para quem" style="background:#E6E7E8;padding:clamp(56px,7vw,96px) clamp(20px,5.5vw,80px)">
+  <div style="max-width:1440px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:clamp(40px,5vw,80px);align-items:center">
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <p style="margin:0;color:#FF1A6C;font-size:14px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase">Para quem</p>
+        <h2 style="margin:0;font-size:clamp(28px,3vw,40px);line-height:1;font-weight:700;text-transform:uppercase;color:#000916;text-wrap:balance">Para quem planta de 2 mil a 10 mil hectares</h2>
+        <img src="assets/c8922da4.svg" width="282" height="10" alt="" style="display:block;max-width:100%;height:auto">
+      </div>
+      <p style="margin:0;font-size:17px;line-height:1.625;color:#373535;max-width:520px;text-wrap:pretty">E tem os números espalhados, atrasados, sem saber em quais confiar.</p>
+      <sc-if value="{{ fotos }}" hint-placeholder-val="{{ false }}">
+        <div style="position:relative;aspect-ratio:16/10;background:#D5D8DD">
+          <image-slot id="foto-produtor" shape="rect" placeholder="Foto: produtor no escritório da fazenda, celular na mão" style="position:absolute;inset:0;width:100%;height:100%"></image-slot>
+        </div>
+      </sc-if>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div style="background:#FFFFFF;border:1px solid rgba(15,27,53,.18);padding:clamp(24px,2.5vw,32px)">
+        <span style="display:block;width:40px;height:3px;background:#FF1A6C"></span>
+        <p style="margin:16px 0 0;font-size:clamp(36px,3.6vw,56px);line-height:1;font-weight:700;color:#0F1B35">R$ 300/ha</p>
+        <p style="margin:12px 0 0;font-size:15px;line-height:1.6;color:#596363">é o tamanho de um erro de 5% no custo da soja, que passou de R$ 6,1 mil/ha em MS na safra 25/26.</p>
+      </div>
+      <div style="background:#FFFFFF;border:1px solid rgba(15,27,53,.18);padding:clamp(24px,2.5vw,32px)">
+        <span style="display:block;width:40px;height:3px;background:#FF1A6C"></span>
+        <p style="margin:16px 0 0;font-size:clamp(36px,3.6vw,56px);line-height:1;font-weight:700;color:#0F1B35">1 em 3</p>
+        <p style="margin:12px 0 0;font-size:15px;line-height:1.6;color:#596363">produtores que dizem controlar gastos não consegue estimar o próprio custo de produção.</p>
+      </div>
+      <div style="background:#FFFFFF;border:1px solid rgba(15,27,53,.18);padding:clamp(24px,2.5vw,32px)">
+        <span style="display:block;width:40px;height:3px;background:#FF1A6C"></span>
+        <p style="margin:16px 0 0;font-size:clamp(36px,3.6vw,56px);line-height:1;font-weight:700;color:#0F1B35">2027</p>
+        <p style="margin:12px 0 0;font-size:15px;line-height:1.6;color:#596363">começa a CBS para quem fatura acima de R$ 3,6 mi. O LCDPR já é obrigatório acima de R$ 4,8 mi. O contador vai pedir dado limpo, e mais cedo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="piloto" data-screen-label="Piloto" style="background:#0F1B35;color:#FFFFFF;padding:clamp(56px,7vw,96px) clamp(20px,5.5vw,80px);scroll-margin-top:88px">
+  <div style="max-width:1440px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:clamp(40px,5vw,80px);align-items:start">
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <p style="margin:0;color:#FF1A6C;font-size:14px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase">Piloto · colheita da soja 26/27</p>
+        <h2 style="margin:0;font-size:clamp(30px,3.6vw,48px);line-height:1;font-weight:700;text-transform:uppercase;color:#FFFFFF;text-wrap:balance">Poucas fazendas. <span style="color:#568EFF">Uma safra para provar.</span></h2>
+        <img src="assets/c8922da4.svg" width="282" height="10" alt="" style="display:block;max-width:100%;height:auto">
+      </div>
+      <p style="margin:0;font-size:17px;line-height:1.625;color:rgba(255,255,255,.85);max-width:520px;text-wrap:pretty">Você continua tocando a fazenda. A gente monta o back office junto, com uma pessoa conferindo cada lançamento nas primeiras semanas.</p>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div style="display:grid;grid-template-columns:56px minmax(0,1fr);gap:8px;align-items:center;background:#18243B;border:1px solid rgba(255,255,255,.10);padding:18px 20px"><span style="font-size:28px;line-height:1;font-weight:700;color:#568EFF">01</span><span style="font-size:17px;line-height:1.5">Criamos o grupo de WhatsApp da fazenda com você, o administrativo e o encarregado.</span></div>
+        <div style="display:grid;grid-template-columns:56px minmax(0,1fr);gap:8px;align-items:center;background:#18243B;border:1px solid rgba(255,255,255,.10);padding:18px 20px"><span style="font-size:28px;line-height:1;font-weight:700;color:#568EFF">02</span><span style="font-size:17px;line-height:1.5">Você autoriza o acesso ao banco e às notas fiscais.</span></div>
+        <div style="display:grid;grid-template-columns:56px minmax(0,1fr);gap:8px;align-items:center;background:#18243B;border:1px solid rgba(255,255,255,.10);padding:18px 20px"><span style="font-size:28px;line-height:1;font-weight:700;color:#568EFF">03</span><span style="font-size:17px;line-height:1.5">Na segunda seguinte, às 7h, chega o primeiro briefing.</span></div>
+      </div>
+    </div>
+
+    <div style="background:#FFFFFF;color:#000916;padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;gap:20px">
+      <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;flex-direction:column;gap:20px">
+          <span style="font-size:24px;line-height:1.1;font-weight:600;text-transform:uppercase">Quero participar do piloto</span>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px">
+            <label style="display:flex;flex-direction:column;gap:8px">
+              <span style="font-size:12.5px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#0F1B35">Nome <span style="color:#FF003F">*</span></span>
+              <input value="{{ nome }}" sc-camel-on-change="{{ onNome }}" style="height:50px;width:100%;padding:0 14px;border:1px solid rgba(100,100,100,.35);border-radius:4px;background:#F4F5F7;font-size:16px;color:#000916" style-focus="border-color:#568EFF;outline:none;box-shadow:0 0 0 2px rgba(86,142,255,.2)">
+            </label>
+            <label style="display:flex;flex-direction:column;gap:8px">
+              <span style="font-size:12.5px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#0F1B35">WhatsApp <span style="color:#FF003F">*</span></span>
+              <input value="{{ zap }}" sc-camel-on-change="{{ onZap }}" sc-camel-input-mode="tel" placeholder="(66) 99999-0000" style="height:50px;width:100%;padding:0 14px;border:1px solid rgba(100,100,100,.35);border-radius:4px;background:#F4F5F7;font-size:16px;color:#000916" style-focus="border-color:#568EFF;outline:none;box-shadow:0 0 0 2px rgba(86,142,255,.2)">
+            </label>
+          </div>
+          <label style="display:flex;flex-direction:column;gap:8px">
+            <span style="font-size:12.5px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#0F1B35">Fazenda e município</span>
+            <input value="{{ fazenda }}" sc-camel-on-change="{{ onFazenda }}" placeholder="Fazenda Santa Clara, Sorriso (MT)" style="height:50px;width:100%;padding:0 14px;border:1px solid rgba(100,100,100,.35);border-radius:4px;background:#F4F5F7;font-size:16px;color:#000916" style-focus="border-color:#568EFF;outline:none;box-shadow:0 0 0 2px rgba(86,142,255,.2)">
+          </label>
+          <label style="display:flex;flex-direction:column;gap:8px">
+            <span style="font-size:12.5px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#0F1B35">Área plantada (ha)</span>
+            <input value="{{ area }}" sc-camel-on-change="{{ onArea }}" sc-camel-input-mode="numeric" placeholder="4.200" style="height:50px;width:100%;padding:0 14px;border:1px solid rgba(100,100,100,.35);border-radius:4px;background:#F4F5F7;font-size:16px;color:#000916" style-focus="border-color:#568EFF;outline:none;box-shadow:0 0 0 2px rgba(86,142,255,.2)">
+          </label>
+          <sc-if value="{{ formErr }}" hint-placeholder-val="{{ false }}">
+            <span style="font-size:15px;color:#FF003F">Preencha pelo menos nome e WhatsApp.</span>
+          </sc-if>
+          <div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px;border-top:1px solid rgba(100,100,100,.15);padding-top:20px">
+            <button sc-camel-on-click="{{ send }}" style="height:56px;padding:0 32px;border:0;background:#568EFF;color:#FFFFFF;font-weight:600;font-size:17px;text-transform:uppercase;cursor:pointer;transition:background .15s" style-hover="background:#0F1B35;box-shadow:inset 0 0 0 2px #568EFF" style-active="transform:translateY(1px)">Enviar</button>
+            <span style="font-size:15px;color:#596363">A gente responde pelo WhatsApp em até um dia útil.</span>
+          </div>
+        </div>
+      </sc-if>
+      <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column;gap:16px;padding:8px 0">
+          <span style="display:block;width:40px;height:3px;background:#FF1A6C"></span>
+          <span style="font-size:clamp(24px,2.4vw,30px);line-height:1.1;font-weight:700;text-transform:uppercase">Obrigado, {{ nomeCurto }}. A gente te chama no WhatsApp.</span>
+          <span style="font-size:17px;line-height:1.625;color:#373535">Na primeira conversa a gente só pergunta: o que alguém precisa correr atrás para você saber se a fazenda está dando dinheiro? E em quais números você não confia 100% hoje?</span>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+</section>
+
+<footer style="background:#000916;border-top:1px solid rgba(86,142,255,.25);color:#DDE6FF;padding:48px clamp(20px,5.5vw,80px) 28px">
+  <div style="max-width:1168px;margin:0 auto;display:flex;flex-direction:column">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap">
+      <a href="#" style="display:flex;align-items:center;gap:16px">
+        <img src="assets/464f6de0.svg" width="150" height="32" alt="WinsVue" style="display:block">
+        <span style="width:1px;height:26px;background:rgba(255,255,255,.25)"></span>
+        <span style="color:#FFFFFF;font-size:18px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase">Agro</span>
+      </a>
+      <nav style="display:flex;flex-wrap:wrap;gap:16px 24px">
+        <a href="#captura" style="color:#FFFFFF;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase" style-hover="color:#568EFF">Como funciona</a>
+        <a href="#decisao" style="color:#FFFFFF;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase" style-hover="color:#568EFF">Briefing</a>
+        <a href="#rastreio" style="color:#FFFFFF;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase" style-hover="color:#568EFF">Confiança</a>
+        <a href="#integracoes" style="color:#FFFFFF;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase" style-hover="color:#568EFF">Integrações</a>
+        <a href="#piloto" style="color:#FFFFFF;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase" style-hover="color:#568EFF">Piloto</a>
+        <a href="https://winsvue.com/" style="color:#FFFFFF;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase" style-hover="color:#568EFF">Wins VUE</a>
+      </nav>
+    </div>
+    <div style="height:1px;background:rgba(221,230,255,.15);margin:40px 0 24px"></div>
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
+      <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+        <span style="font-size:15px">Você toca a fazenda. A WinsVue cuida dos números.</span>
+        <span style="width:1px;height:18px;background:rgba(221,230,255,.3)"></span>
+        <span style="font-size:12px;color:rgba(221,230,255,.75)">© 2026 Wins VUE · Exemplos com dados fictícios</span>
+      </div>
+      <a href="#" style="display:flex;align-items:center;gap:10px;color:#FFFFFF;font-size:14px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase" style-hover="color:#568EFF">Voltar ao topo <span style="font-size:10px">▲</span></a>
+    </div>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;produtor&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;João&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Conteúdo&quot;},&quot;animarConversa&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Comportamento&quot;},&quot;mostrarFotos&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Layout&quot;}}">
+class Component extends DCLogic {
+  state = { heroStep: 0, reply: null, replyStage: 0, capTab: 'audio', audioP: 0, playing: false, org: null, q: 0, decisao: null, traceOpen: true, alertSel: 0, alertAct: {}, nome: '', fazenda: '', area: '', zap: '', sent: false, formErr: false };
+  chatRef = React.createRef();
+  timers = [];
+  WAVE = [10,16,22,14,28,34,20,12,18,30,38,26,16,10,20,32,24,14,22,36,30,18,12,24,34,28,16,10,18,26,20,14,22,16,12,8];
+  TRANSCRIPT = 'Coloquei 420 litros de diesel na 7230. Tô começando o talhão 12 da Santa Clara.';
+
+  later(fn, ms) { this.timers.push(setTimeout(fn, ms)); }
+
+  componentDidMount() {
+    if (this.props.animarConversa === false) { this.setState({ heroStep: 3 }); return; }
+    this.later(() => this.setState({ heroStep: 1 }), 700);
+    this.later(() => this.setState({ heroStep: 2 }), 1900);
+    this.later(() => this.setState({ heroStep: 3 }), 3000);
+  }
+  componentDidUpdate() {
+    const ps = this._prev || { heroStep: 0, replyStage: 0 };
+    this._prev = { heroStep: this.state.heroStep, replyStage: this.state.replyStage };
+    if (ps.heroStep !== this.state.heroStep || ps.replyStage !== this.state.replyStage) {
+      const el = this.chatRef.current;
+      if (el) el.scrollTo({ top: el.scrollHeight, behavior: 'smooth' });
+    }
+  }
+  componentWillUnmount() { this.timers.forEach(clearTimeout); clearInterval(this.iv); }
+
+  reply(kind) {
+    if (this.state.reply || this.state.heroStep < 3) return;
+    this.setState({ reply: kind, replyStage: 1 });
+    this.later(() => this.setState({ replyStage: 2 }), 1400);
+  }
+
+  toggleAudio() {
+    if (this.state.playing) { clearInterval(this.iv); this.setState({ playing: false }); return; }
+    this.setState(s => ({ playing: true, capTab: 'audio', audioP: s.audioP >= 1 ? 0 : s.audioP }));
+    clearInterval(this.iv);
+    this.iv = setInterval(() => {
+      this.setState(s => {
+        const p = Math.min(1, s.audioP + 1 / 120);
+        if (p >= 1) { clearInterval(this.iv); return { audioP: 1, playing: false }; }
+        return { audioP: p };
+      });
+    }, 50);
+  }
+
+  outs(P) {
+    return {
+      audio: { title: 'Abastecimento lançado', ok: true, status: 'Conferido com a nota do posto', note: '', rows: [
+        { k: 'Item', v: 'Diesel S10 · 420 litros' },
+        { k: 'Máquina', v: 'Trator 7230' },
+        { k: 'Onde', v: 'Fazenda Santa Clara · talhão 12' },
+        { k: 'Safra', v: 'Soja 26/27 · plantio' },
+        { k: 'Centro de custo', v: 'Mecanização' },
+        { k: 'Valor', v: 'R$ 2.562,00 (420 L × R$ 6,10)' },
+        { k: 'Origem', v: 'Áudio de Zé Carlos, 06:42' } ] },
+      texto: { title: 'Compra registrada', ok: false, status: 'Falta confirmar fazenda e safra', note: 'A Grace pergunta só o que falta. Veja no passo 02, logo abaixo.', rows: [
+        { k: 'Item', v: 'Adubo 02-20-20, o mesmo da compra de agosto' },
+        { k: 'Quantidade', v: '80 toneladas' },
+        { k: 'Fornecedor', v: 'Agro Sul Insumos · Marcos' },
+        { k: 'Valor', v: 'R$ 482.300,00' },
+        { k: 'Parcelas', v: '3 × R$ 160.766,67 · 30/10, 29/11 e 29/12' },
+        { k: 'Origem', v: 'Mensagem de ' + P + ', 11:15' } ] },
+      nota: { title: 'Conta a pagar criada', ok: false, status: '260 litros sem destino', note: 'Já perguntei ao Zé Carlos onde foram os 260 litros.', rows: [
+        { k: 'Fornecedor', v: 'Posto Trevo' },
+        { k: 'Valor', v: 'R$ 19.520,00 · vence 28/10' },
+        { k: 'Item', v: 'Diesel S10 · 3.200 litros' },
+        { k: 'Cruzado com', v: '9 áudios de abastecimento · 2.940 litros' },
+        { k: 'Diferença', v: '260 litros' } ] },
+      extrato: { title: 'Conta conciliada', ok: true, status: '4 de 4 movimentos explicados', note: '', rows: [
+        { k: 'PIX Posto Trevo', v: 'Nota 18.102 de agosto · baixada' },
+        { k: 'TED Planalto', v: 'Venda de 7.000 sc de milho · contrato 0391/26' },
+        { k: 'Folha', v: 'Folha de setembro · rateada entre as duas fazendas' },
+        { k: 'Tarifa', v: 'Despesa bancária · administrativo' } ] },
+      contrato: { title: 'Recebível futuro criado', ok: true, status: 'Volume com preço atualizado', note: '', rows: [
+        { k: 'Recebível', v: 'R$ 1.008.000,00 em 30/04/2027' },
+        { k: 'Volume', v: '8.000 sc de soja · entrega em março' },
+        { k: 'Com preço', v: '22% da produção estimada' },
+        { k: 'Sem preço', v: '78% · 144 mil sacas' },
+        { k: 'Origem', v: 'PDF enviado por ' + P + ', 14:02' } ] }
+    };
+  }
+
+  ANSWERS = [
+    { label: 'Estou ganhando dinheiro?', lead: 'Sim. Menos que no ano passado.', body: 'Na soja 26/27, com o preço que você já fixou e o que já gastou ou contratou, sobram R$ 1.180 por hectare. Na safra 25/26 sobraram R$ 1.640. A diferença está quase toda no adubo e no diesel.',
+      figs: [['Margem 26/27', 'R$ 1.180/ha'], ['Margem 25/26', 'R$ 1.640/ha'], ['Diferença', '−R$ 460/ha', 1]] },
+    { label: 'Quanto está custando minha soja de verdade?', lead: 'R$ 94 por saca.', body: 'Contando tudo: o que já foi pago, o que está contratado e a parte do administrativo e dos juros que cabe à soja. O orçamento de julho dizia R$ 89.',
+      figs: [['Insumos', 'R$ 52'], ['Operação', 'R$ 18'], ['Arrendamento', 'R$ 14'], ['Administrativo', 'R$ 6'], ['Juros', 'R$ 4']] },
+    { label: 'Onde estou gastando mais que ano passado?', lead: 'Em três lugares.', body: 'Adubo na Santa Clara, diesel na Boa Vista e no escritório. O administrativo cresceu 19%, a área plantada cresceu 4%.',
+      figs: [['Adubo', '+R$ 112/ha', 1], ['Diesel', '+R$ 47/ha', 1], ['Administrativo', '+19%', 1]] },
+    { label: 'Tenho dinheiro para pagar fevereiro?', lead: 'Não inteiro. Faltam R$ 800 mil.', body: 'Vencem R$ 3,4 milhões em fevereiro e entram R$ 2,6 milhões já contratados. Dá para cobrir vendendo cerca de 6.100 sacas a R$ 131 ou renegociando a parcela 3 da Agro Sul.',
+      figs: [['Vence em fev.', 'R$ 3,4 mi'], ['Entra contratado', 'R$ 2,6 mi'], ['Falta', 'R$ 800 mil', 1]] },
+    { label: 'Por que meu caixa está apertado se vendi bem?', lead: 'Porque você vendeu bem para abril.', body: '61% do que você já vendeu só entra depois da colheita. As parcelas de insumo vencem entre outubro e janeiro. O dinheiro existe, mas chega depois da conta.',
+      figs: [['Já vendido', 'R$ 6,7 mi'], ['Entra até jan.', 'R$ 2,6 mi'], ['Entra após abr.', 'R$ 4,1 mi', 1]] },
+    { label: 'Quanto preciso vender para cobrir minhas contas?', lead: '18.400 sacas até 15 de dezembro.', body: 'Ao preço de hoje, isso cobre tudo que vence até janeiro sem usar o limite do banco. Depois disso, 68% da produção continua sem preço.',
+      figs: [['Sacas', '18.400'], ['Preço de hoje', 'R$ 131/sc'], ['Cobre', 'R$ 2,41 mi']] }
+  ];
+
+  DECISOES = [
+    { id: 'aceitar', label: 'Aceitar a proposta', msg: 'Anotado. Quando o contrato chegar, lanço o recebível de R$ 1,28 mi para 10/11 e atualizo o volume com preço para 28%.' },
+    { id: 'contra', label: 'Contrapropor R$ 131', msg: 'Anotado. A R$ 131, a margem nessas sacas sobe para R$ 37/sc. Se a Grãos do Norte topar, atualizo o caixa de novembro.' },
+    { id: 'esperar', label: 'Esperar', msg: 'Combinado. Te aviso se o preço cair abaixo de R$ 125/sc ou se o caixa de novembro apertar.' }
+  ];
+
+  renderVals() {
+    const s = this.state;
+    const P = this.props.produtor || 'João';
+    const fotos = this.props.mostrarFotos ?? false;
+
+    const tabs = [['audio', 'Áudio do encarregado'], ['texto', 'Mensagem do produtor'], ['nota', 'Nota fiscal'], ['extrato', 'Extrato do banco'], ['contrato', 'Contrato de venda']]
+      .map(([id, label]) => ({ id, label, active: s.capTab === id, idle: s.capTab !== id, pick: () => this.setState({ capTab: id }) }));
+
+    const p = s.audioP;
+    const n = this.WAVE.length;
+    const wave = this.WAVE.map((h, i) => ({ h: h + 'px', c: (i + 0.5) / n <= p ? '#568EFF' : 'rgba(15,27,53,.22)' }));
+    const words = this.TRANSCRIPT.split(' ');
+    const transcript = words.slice(0, Math.ceil(p * words.length)).join(' ');
+    const sec = Math.floor(p * 6);
+
+    const o = this.outs(P)[s.capTab];
+    const out = { ...o, pend: !o.ok, hasNote: !!o.note };
+    const showOut = s.capTab !== 'audio' || p >= 1;
+
+    const orgV = s.org === 'bv' ? { faz: 'Boa Vista', area: '1.350 ha', ha: 'R$ 357,26/ha' } : s.org === 'sc' ? { faz: 'Santa Clara', area: '1.850 ha', ha: 'R$ 260,70/ha' } : null;
+    const orgRows = [
+      ['O que foi comprado', 'Adubo 02-20-20 · 80 t'],
+      ['Fornecedor', 'Agro Sul Insumos'],
+      ['Fazenda', orgV && orgV.faz, 1],
+      ['Cultura', orgV && 'Soja', 1],
+      ['Safra', orgV && '26/27', 1],
+      ['Área', orgV && orgV.area, 1],
+      ['Centro de custo', orgV && 'Fertilização · plantio', 1],
+      ['Vencimentos', '30/10 · 29/11 · 29/12'],
+      ['Financiamento', 'Prazo do fornecedor, sem juros'],
+      ['Custo por hectare', orgV && orgV.ha, 1]
+    ].map(([k, v, filled]) => ({ k, v: v || '', pend: !v, done: !!v, c: filled ? '#2459B3' : '#000916' }));
+
+    const A = this.ANSWERS[s.q];
+    const ans = { lead: A.lead, body: A.body, figs: A.figs.map(([label, value, neg]) => ({ label, value, c: neg ? '#FF003F' : '#000916' })) };
+    const questions = this.ANSWERS.map((a, i) => ({ label: a.label, active: s.q === i, idle: s.q !== i, pick: () => this.setState({ q: i }) }));
+
+    const dec = this.DECISOES.find(d => d.id === s.decisao);
+    const decisoes = this.DECISOES.map(d => ({ label: d.label, active: s.decisao === d.id, idle: s.decisao !== d.id, pick: () => this.setState({ decisao: d.id }) }));
+
+    const AL = [
+      { tag: 'Insumo · hoje, 09:12', msg: P + ', o adubo 02-20-20 caiu 10% hoje na Agro Sul. Você ainda tem 120 t para comprar para o milho safrinha.',
+        why: 'O orçamento do milho safrinha prevê 120 t de 02-20-20 e nada foi comprado ainda. Com a queda de hoje, a economia é de cerca de R$ 72 mil.',
+        src: 'Tabela de preços de 14 fornecedores da sua região, atualizada todo dia.',
+        figs: [['Ontem', 'R$ 6.030/t'], ['Hoje', 'R$ 5.427/t'], ['Economia em 120 t', 'R$ 72 mil']],
+        actions: [['Pedir cotação', 'Pedi cotação à Agro Sul e a mais 2 fornecedores. Te mando a comparação amanhã até as 10h.'], ['Me lembra em 7 dias', 'Combinado. Volto no dia 12 com o preço atualizado.']] },
+      { tag: 'Comparação · ontem', msg: P + ', a semente de soja que você compra está 33% mais cara do que fazendas parecidas costumam pagar. Vale cotar em outros lugares.',
+        why: 'Semente é a sua terceira maior despesa na soja, e a compra da safra 27/28 começa em janeiro.',
+        src: 'Mediana anônima de 41 fazendas de grãos do MT, de 2 a 10 mil ha, que aceitaram participar da comparação.',
+        figs: [['Você paga', 'R$ 412/sc'], ['Mediana', 'R$ 310/sc'], ['Diferença', '+33%', 1]],
+        actions: [['Cotar em outros lugares', 'Separei 4 fornecedores que atendem a sua região abaixo da mediana. Peço cotação para os 4?'], ['Manter o atual', 'Ok. Fica registrado como escolha sua e não aviso de novo nesta safra.']] },
+      { tag: 'Mundo · hoje, 06:40', msg: P + ', houve ataque a petroleiros no Golfo hoje. O petróleo subiu 6% e o diesel deve subir nos próximos dias. Quer fazer algo a respeito?',
+        why: 'Até o fim da colheita você ainda deve usar cerca de 180 mil litros de diesel. Cada R$ 0,30 a mais por litro são R$ 54 mil.',
+        src: 'Notícias, mercado futuro do petróleo e preço do diesel da ANP na sua região.',
+        figs: [['Petróleo hoje', '+6%', 1], ['Diesel a usar', '180 mil L'], ['A cada R$ 0,30/L', 'R$ 54 mil']],
+        actions: [['Antecipar compra de diesel', 'Comprar 60 mil litros agora custa R$ 366 mil e aumenta o que falta no caixa de outubro para R$ 986 mil. Peço cotação mesmo assim, ou procuro prazo de 60 dias?'], ['Só acompanhar', 'Combinado. Te aviso se o diesel passar de R$ 6,40/L na sua região.']] }
+    ];
+    const curAl = AL[s.alertSel];
+    const chosen = s.alertAct[s.alertSel];
+    const alerts = AL.map((a, i) => ({ tag: a.tag, msg: a.msg, active: s.alertSel === i, idle: s.alertSel !== i, pick: () => this.setState({ alertSel: i }) }));
+    const al = {
+      why: curAl.why, src: curAl.src,
+      figs: curAl.figs.map(([label, value, neg]) => ({ label, value, c: neg ? '#FF003F' : '#000916' })),
+      actions: curAl.actions.map(([label], j) => ({ label, active: chosen === j, idle: chosen !== j, pick: () => this.setState(st => ({ alertAct: { ...st.alertAct, [st.alertSel]: j } })) }))
+    };
+
+    const field = k => e => this.setState({ [k]: e.target.value, formErr: false });
+
+    return {
+      produtor: P,
+      fotos,
+      chatRef: this.chatRef,
+      showTyping: s.heroStep === 1 || s.replyStage === 1,
+      showBrief: s.heroStep >= 2,
+      showAsk: s.heroStep >= 3,
+      showChips: s.heroStep >= 3 && !s.reply,
+      showReply: !!s.reply,
+      replyText: s.reply === 'quero' ? 'Quero' : 'Depois',
+      showExplain: s.reply === 'quero' && s.replyStage === 2,
+      showLater: s.reply === 'depois' && s.replyStage === 2,
+      replyQuero: () => this.reply('quero'),
+      replyDepois: () => this.reply('depois'),
+
+      tabs,
+      isAudio: s.capTab === 'audio', isTexto: s.capTab === 'texto', isNota: s.capTab === 'nota', isExtrato: s.capTab === 'extrato', isContrato: s.capTab === 'contrato',
+      wave,
+      playIcon: s.playing ? '❚❚' : (p >= 1 ? '↺' : '▶'),
+      audioTime: '0:0' + (s.playing || p > 0 ? sec : 6),
+      toggleAudio: () => this.toggleAudio(),
+      transcript,
+      hasTranscript: p > 0,
+      noTranscript: p === 0,
+      out, showOut, hideOut: !showOut,
+
+      orgAsk: !s.org,
+      orgAnswered: !!s.org,
+      orgReply: s.org === 'bv' ? 'Não, é da Boa Vista.' : 'Sim.',
+      orgFaz: orgV ? orgV.faz : '',
+      orgPendCount: orgRows.filter(r => r.pend).length,
+      orgRows,
+      orgSim: () => this.setState({ org: 'sc' }),
+      orgBv: () => this.setState({ org: 'bv' }),
+      orgReset: () => this.setState({ org: null }),
+
+      questions, ans,
+
+      alerts, al,
+      hasAlertReply: chosen !== undefined,
+      alertReply: chosen !== undefined ? curAl.actions[chosen][1] : '',
+
+      decisoes,
+      hasDecisao: !!dec, noDecisao: !dec,
+      decisaoMsg: dec ? dec.msg : '',
+
+      traceOpen: s.traceOpen,
+      traceLabel: s.traceOpen ? 'Esconder a origem' : 'De onde veio esse número?',
+      toggleTrace: () => this.setState({ traceOpen: !s.traceOpen }),
+
+      nome: s.nome, fazenda: s.fazenda, area: s.area, zap: s.zap,
+      onNome: field('nome'), onFazenda: field('fazenda'), onArea: field('area'), onZap: field('zap'),
+      formErr: s.formErr,
+      sent: s.sent, notSent: !s.sent,
+      nomeCurto: (s.nome.trim().split(' ')[0]) || '',
+      send: () => {
+        if (!s.nome.trim() || !s.zap.trim()) { this.setState({ formErr: true }); return; }
+        this.setState({ sent: true });
+      }
+    };
+  }
+}
+</script>
+
+
+</body></html>
