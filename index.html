@@ -448,7 +448,7 @@ input,button{font:inherit}
       </div>
 
       <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:stretch">
-        <div style="flex:1 1 320px;max-width:364px;margin:0 auto;background:#000916;border-radius:44px;padding:10px;box-shadow:0 40px 80px -24px rgba(0,9,22,.45),0 0 0 1px rgba(255,255,255,.08)">
+        <div style="flex:0 1 364px;width:364px;max-width:100%;margin:0 auto;background:#000916;border-radius:44px;padding:10px;box-shadow:0 40px 80px -24px rgba(0,9,22,.45),0 0 0 1px rgba(255,255,255,.08)">
           <div style="border-radius:35px;overflow:hidden;background:#E6E7E8;height:640px;display:flex;flex-direction:column;color:#000916">
             <div style="background:#FFFFFF;padding:12px 26px 0;display:flex;align-items:center;justify-content:space-between">
               <span style="font-size:14px;font-weight:600">{{ capHead.clock }}</span>
@@ -576,9 +576,9 @@ input,button{font:inherit}
           </div>
         </div>
 
-        <div style="flex:999 1 420px;display:flex;flex-direction:column">
+        <div style="flex:999 1 420px;display:flex;flex-direction:column;justify-content:center">
           <sc-if value="{{ showOut }}" hint-placeholder-val="{{ true }}">
-            <div style="flex:1;background:#FFFFFF;border:1px solid rgba(15,27,53,.18);border-top:4px solid #568EFF;padding:clamp(20px,2.5vw,32px);display:flex;flex-direction:column;gap:16px">
+            <div style="background:#FFFFFF;border:1px solid rgba(15,27,53,.18);border-top:4px solid #568EFF;padding:clamp(20px,2.5vw,32px);display:flex;flex-direction:column;gap:16px">
               <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap">
                 <div style="display:flex;flex-direction:column;gap:8px">
                   <span style="font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#2459B3">O que a WinsVue lança</span>
@@ -600,15 +600,53 @@ input,button{font:inherit}
                 </sc-for>
               </div>
               <sc-if value="{{ out.hasNote }}" hint-placeholder-val="{{ false }}">
-                <div style="margin-top:auto;background:#DDE6FF;padding:12px 16px;font-size:15px;line-height:1.5;color:#0F1B35">{{ out.note }}</div>
+                <div style="background:#DDE6FF;padding:12px 16px;font-size:15px;line-height:1.5;color:#0F1B35">{{ out.note }}</div>
               </sc-if>
             </div>
           </sc-if>
           <sc-if value="{{ hideOut }}" hint-placeholder-val="{{ false }}">
-            <div style="flex:1;background:#FFFFFF;border:1px dashed rgba(15,27,53,.35);padding:32px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:12px;min-height:440px">
-              <span style="font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#2459B3">O que a WinsVue lança</span>
-              <span style="font-size:24px;line-height:1.15;font-weight:600;text-transform:uppercase;max-width:360px">O lançamento aparece aqui quando o áudio termina</span>
-              <button sc-camel-on-click="{{ toggleAudio }}" style="margin-top:8px;height:52px;padding:0 28px;border:0;background:#568EFF;color:#FFFFFF;font-weight:600;font-size:15px;text-transform:uppercase;cursor:pointer" style-hover="background:#0F1B35;box-shadow:inset 0 0 0 2px #568EFF">Ouvir o áudio do Zé Carlos</button>
+            <div style="background:#FFFFFF;border:1px solid rgba(15,27,53,.18);border-top:4px solid #C9CDD3;padding:clamp(20px,2.5vw,32px);display:flex;flex-direction:column;gap:16px">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap">
+                <div style="display:flex;flex-direction:column;gap:8px">
+                  <span style="font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#2459B3">O que a WinsVue lança</span>
+                  <span style="font-size:24px;line-height:1.1;font-weight:600;text-transform:uppercase;color:#596363">Esperando o áudio</span>
+                </div>
+                <span style="font-size:13px;font-weight:500;background:#E6E7E8;color:#373535;padding:6px 10px">Nada lançado ainda</span>
+              </div>
+              <div style="display:flex;flex-direction:column">
+                  <div style="display:grid;grid-template-columns:minmax(110px,160px) minmax(0,1fr);gap:16px;align-items:center;padding:12px 0;border-top:1px solid rgba(15,27,53,.12);font-size:16px;line-height:1.4">
+                    <span style="color:#596363">Item</span>
+                    <span style="display:block;height:12px;width:44%;max-width:100%;border-radius:3px;background:#E6E7E8"></span>
+                  </div>
+                  <div style="display:grid;grid-template-columns:minmax(110px,160px) minmax(0,1fr);gap:16px;align-items:center;padding:12px 0;border-top:1px solid rgba(15,27,53,.12);font-size:16px;line-height:1.4">
+                    <span style="color:#596363">Máquina</span>
+                    <span style="display:block;height:12px;width:26%;max-width:100%;border-radius:3px;background:#E6E7E8"></span>
+                  </div>
+                  <div style="display:grid;grid-template-columns:minmax(110px,160px) minmax(0,1fr);gap:16px;align-items:center;padding:12px 0;border-top:1px solid rgba(15,27,53,.12);font-size:16px;line-height:1.4">
+                    <span style="color:#596363">Onde</span>
+                    <span style="display:block;height:12px;width:52%;max-width:100%;border-radius:3px;background:#E6E7E8"></span>
+                  </div>
+                  <div style="display:grid;grid-template-columns:minmax(110px,160px) minmax(0,1fr);gap:16px;align-items:center;padding:12px 0;border-top:1px solid rgba(15,27,53,.12);font-size:16px;line-height:1.4">
+                    <span style="color:#596363">Safra</span>
+                    <span style="display:block;height:12px;width:34%;max-width:100%;border-radius:3px;background:#E6E7E8"></span>
+                  </div>
+                  <div style="display:grid;grid-template-columns:minmax(110px,160px) minmax(0,1fr);gap:16px;align-items:center;padding:12px 0;border-top:1px solid rgba(15,27,53,.12);font-size:16px;line-height:1.4">
+                    <span style="color:#596363">Centro de custo</span>
+                    <span style="display:block;height:12px;width:30%;max-width:100%;border-radius:3px;background:#E6E7E8"></span>
+                  </div>
+                  <div style="display:grid;grid-template-columns:minmax(110px,160px) minmax(0,1fr);gap:16px;align-items:center;padding:12px 0;border-top:1px solid rgba(15,27,53,.12);font-size:16px;line-height:1.4">
+                    <span style="color:#596363">Valor</span>
+                    <span style="display:block;height:12px;width:42%;max-width:100%;border-radius:3px;background:#E6E7E8"></span>
+                  </div>
+                  <div style="display:grid;grid-template-columns:minmax(110px,160px) minmax(0,1fr);gap:16px;align-items:center;padding:12px 0;border-top:1px solid rgba(15,27,53,.12);font-size:16px;line-height:1.4">
+                    <span style="color:#596363">Origem</span>
+                    <span style="display:block;height:12px;width:38%;max-width:100%;border-radius:3px;background:#E6E7E8"></span>
+                  </div>
+              </div>
+              <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;border-top:1px solid rgba(15,27,53,.12);padding-top:16px">
+                <button sc-camel-on-click="{{ toggleAudio }}" style="height:48px;padding:0 24px;border:0;background:#568EFF;color:#FFFFFF;font-weight:600;font-size:15px;text-transform:uppercase;cursor:pointer" style-hover="background:#0F1B35;box-shadow:inset 0 0 0 2px #568EFF">Ouvir o áudio do Zé Carlos</button>
+                <span style="font-size:15px;line-height:1.5;color:#596363">Os campos se preenchem quando o áudio termina.</span>
+              </div>
             </div>
           </sc-if>
         </div>
