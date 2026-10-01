@@ -447,92 +447,136 @@ input,button{font:inherit}
         </sc-for>
       </div>
 
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:16px;align-items:stretch">
-        <div style="background:#0F1B35;padding:clamp(20px,2.5vw,32px);display:flex;flex-direction:column;gap:16px;min-height:440px">
-          <p style="margin:0;color:rgba(255,255,255,.65);font-size:13px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase">O que chega no WhatsApp</p>
+      <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:stretch">
+        <div style="flex:1 1 320px;max-width:364px;margin:0 auto;background:#000916;border-radius:44px;padding:10px;box-shadow:0 40px 80px -24px rgba(0,9,22,.45),0 0 0 1px rgba(255,255,255,.08)">
+          <div style="border-radius:35px;overflow:hidden;background:#E6E7E8;height:640px;display:flex;flex-direction:column;color:#000916">
+            <div style="background:#FFFFFF;padding:12px 26px 0;display:flex;align-items:center;justify-content:space-between">
+              <span style="font-size:14px;font-weight:600">{{ capHead.clock }}</span>
+              <span style="width:90px;height:24px;border-radius:14px;background:#000916"></span>
+              <span style="width:24px;height:11px;border-radius:3px;border:1.5px solid #000916"></span>
+            </div>
+            <div style="background:#FFFFFF;padding:12px 16px;display:flex;align-items:center;gap:12px;border-bottom:1px solid rgba(15,27,53,.12)">
+              <div style="width:40px;height:40px;border-radius:50%;background:#0F1B35;color:#568EFF;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:{{ capHead.initSize }};flex:none">{{ capHead.init }}</div>
+              <div style="display:flex;flex-direction:column;min-width:0">
+                <span style="font-size:16px;font-weight:600;line-height:1.2">{{ capHead.name }}</span>
+                <span style="font-size:12.5px;color:#596363;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ capHead.sub }}</span>
+              </div>
+            </div>
+            <div style="flex:1;overflow-y:auto;scrollbar-width:none;padding:14px 12px;display:flex;flex-direction:column;gap:8px">
 
-          <sc-if value="{{ isAudio }}" hint-placeholder-val="{{ true }}">
-            <div style="display:flex;flex-direction:column;gap:12px">
-              <span style="font-size:13px;color:rgba(255,255,255,.65)">Grupo Fazenda Santa Clara · 06:42</span>
-              <div style="width:100%;max-width:460px;background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:12px 14px;display:flex;flex-direction:column;gap:10px">
-                <span style="font-size:13px;font-weight:600;color:#2459B3">Zé Carlos · encarregado</span>
-                <div style="display:flex;align-items:center;gap:12px">
-                  <button sc-camel-on-click="{{ toggleAudio }}" style="width:46px;height:46px;border-radius:50%;border:0;background:#568EFF;color:#FFFFFF;font-size:15px;cursor:pointer;flex:none;display:flex;align-items:center;justify-content:center" style-hover="background:#0F1B35">{{ playIcon }}</button>
-                  <div style="display:flex;align-items:center;gap:3px;height:40px;flex:1;min-width:0;overflow:hidden">
-                    <sc-for list="{{ wave }}" as="b" hint-placeholder-count="36">
-                      <div style="flex:none;width:3px;border-radius:2px;height:{{ b.h }};background:{{ b.c }}"></div>
-                    </sc-for>
+              <sc-if value="{{ isAudio }}" hint-placeholder-val="{{ true }}">
+                <div style="align-self:center;text-align:center;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#373535;background:#D5D8DD;padding:4px 10px">Hoje · 06:42</div>
+                <div style="align-self:flex-start;max-width:92%;background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:10px 13px 7px;display:flex;flex-direction:column;gap:6px;font-size:14.5px;line-height:1.42;width:92%">
+                  <span style="font-size:13px;font-weight:600;color:#2459B3">Zé Carlos · encarregado</span>
+                  <div style="display:flex;align-items:center;gap:10px">
+                    <button sc-camel-on-click="{{ toggleAudio }}" aria-label="Tocar o áudio" style="width:40px;height:40px;border-radius:50%;border:0;background:#568EFF;color:#FFFFFF;font-size:14px;cursor:pointer;flex:none;display:flex;align-items:center;justify-content:center" style-hover="background:#0F1B35">{{ playIcon }}</button>
+                    <div style="display:flex;align-items:center;gap:2px;height:36px;flex:1;min-width:0;overflow:hidden">
+                      <sc-for list="{{ wave }}" as="b" hint-placeholder-count="36">
+                        <div style="flex:none;width:3px;border-radius:2px;height:{{ b.h }};background:{{ b.c }}"></div>
+                      </sc-for>
+                    </div>
+                    <span style="font-size:12px;color:#596363;flex:none">{{ audioTime }}</span>
                   </div>
-                  <span style="font-size:12px;color:#596363;flex:none">{{ audioTime }}</span>
-                </div>
-              </div>
-              <div style="background:#18243B;border:1px solid rgba(255,255,255,.10);padding:16px 18px;display:flex;flex-direction:column;gap:8px">
-                <span style="font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,.65)">Transcrição</span>
-                <sc-if value="{{ hasTranscript }}" hint-placeholder-val="{{ false }}">
-                  <span style="font-size:18px;line-height:1.5;color:#FFFFFF">“{{ transcript }}”</span>
-                </sc-if>
-                <sc-if value="{{ noTranscript }}" hint-placeholder-val="{{ true }}">
-                  <span style="font-size:15px;color:rgba(255,255,255,.65)">Toque no play para ouvir o áudio.</span>
-                </sc-if>
-              </div>
-            </div>
-          </sc-if>
-
-          <sc-if value="{{ isTexto }}" hint-placeholder-val="{{ false }}">
-            <div style="display:flex;flex-direction:column;gap:12px">
-              <span style="font-size:13px;color:rgba(255,255,255,.65)">Grupo Fazenda Santa Clara · 11:15</span>
-              <div style="align-self:flex-start;max-width:460px;background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:12px 14px 8px;display:flex;flex-direction:column;gap:6px">
-                <span style="font-size:13px;font-weight:600;color:#2459B3">{{ produtor }} · produtor</span>
-                <span style="font-size:18px;line-height:1.45">Fechei 80 ton daquele adubo com o Marcos, 30/60/90.</span>
-                <span style="align-self:flex-end;font-size:11px;color:#596363">11:15</span>
-              </div>
-            </div>
-          </sc-if>
-
-          <sc-if value="{{ isNota }}" hint-placeholder-val="{{ false }}">
-            <div style="display:flex;flex-direction:column;gap:12px">
-              <span style="font-size:13px;color:rgba(255,255,255,.65)">E-mail do Posto Trevo, encaminhado ao grupo · 28/09</span>
-              <div style="background:#FFFFFF;padding:18px;display:flex;flex-direction:column;gap:12px;font-family:Menlo,Consolas,monospace;font-size:13px;color:#000916">
-                <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px dashed rgba(15,27,53,.3);padding-bottom:10px"><span style="font-weight:700">DANFE · NF-e nº 18.233</span><span style="color:#596363">Série 1</span></div>
-                <span>Posto Trevo Comércio de Combustíveis Ltda</span>
-                <div style="display:grid;grid-template-columns:minmax(0,1.6fr) repeat(3,minmax(0,1fr));gap:8px;color:#596363;font-size:11px;text-transform:uppercase"><span>Produto</span><span>Qtd</span><span>Unit.</span><span style="text-align:right">Total</span></div>
-                <div style="display:grid;grid-template-columns:minmax(0,1.6fr) repeat(3,minmax(0,1fr));gap:8px"><span>Óleo diesel S10</span><span>3.200 L</span><span>6,10</span><span style="text-align:right">19.520,00</span></div>
-                <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px dashed rgba(15,27,53,.3);padding-top:10px"><span style="color:#596363">Vencimento 28/10/2026</span><span style="font-weight:700">R$ 19.520,00</span></div>
-              </div>
-            </div>
-          </sc-if>
-
-          <sc-if value="{{ isExtrato }}" hint-placeholder-val="{{ false }}">
-            <div style="display:flex;flex-direction:column;gap:12px">
-              <span style="font-size:13px;color:rgba(255,255,255,.65)">Sicredi · conta 34.512-0 · via Open Finance · 30/09</span>
-              <div style="background:#FFFFFF;padding:4px 16px;display:flex;flex-direction:column;font-family:Menlo,Consolas,monospace;font-size:13px;color:#000916">
-                <div style="display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:12px;padding:12px 0;border-bottom:1px solid rgba(15,27,53,.1)"><span style="color:#596363">30/09</span><span>PIX ENV POSTO TREVO LTDA</span><span style="color:#FF003F">−12.480,00</span></div>
-                <div style="display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:12px;padding:12px 0;border-bottom:1px solid rgba(15,27,53,.1)"><span style="color:#596363">30/09</span><span>TED REC CEREALISTA PLANALTO</span><span style="color:#2459B3">+420.000,00</span></div>
-                <div style="display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:12px;padding:12px 0;border-bottom:1px solid rgba(15,27,53,.1)"><span style="color:#596363">30/09</span><span>FOLHA PAGAMENTO SET</span><span style="color:#FF003F">−86.912,40</span></div>
-                <div style="display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:12px;padding:12px 0"><span style="color:#596363">30/09</span><span>TARIFA PACOTE SERVICOS</span><span style="color:#FF003F">−89,00</span></div>
-              </div>
-            </div>
-          </sc-if>
-
-          <sc-if value="{{ isContrato }}" hint-placeholder-val="{{ false }}">
-            <div style="display:flex;flex-direction:column;gap:12px">
-              <span style="font-size:13px;color:rgba(255,255,255,.65)">Conversa com {{ produtor }} · 14:02</span>
-              <div style="width:100%;max-width:460px;background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:10px;display:flex;flex-direction:column;gap:10px">
-                <div style="display:flex;gap:12px;align-items:center;background:#F4F5F7;padding:12px">
-                  <div style="width:44px;height:56px;background:#FFFFFF;border:1px solid rgba(15,27,53,.18);display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px;flex:none"><span style="font-size:11px;font-weight:700;color:#FF003F">PDF</span></div>
-                  <div style="display:flex;flex-direction:column;gap:2px;min-width:0">
-                    <span style="font-size:15px;font-weight:600">contrato-0447-26.pdf</span>
-                    <span style="font-size:13px;color:#596363">4 páginas · 1,2 MB</span>
+                  <div style="border-top:1px solid rgba(15,27,53,.12);padding-top:8px;display:flex;flex-direction:column;gap:4px">
+                    <span style="font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#596363">Transcrição</span>
+                    <sc-if value="{{ hasTranscript }}" hint-placeholder-val="{{ false }}">
+                      <span style="font-size:14.5px;line-height:1.45">“{{ transcript }}”</span>
+                    </sc-if>
+                    <sc-if value="{{ noTranscript }}" hint-placeholder-val="{{ true }}">
+                      <span style="font-size:13.5px;color:#596363">Toque no play para ouvir o áudio.</span>
+                    </sc-if>
                   </div>
+                  <span style="align-self:flex-end;font-size:11px;color:#596363">06:42</span>
                 </div>
-                <span style="font-size:18px;line-height:1.45;padding:0 4px">Assinei esse da Cerealista Planalto. 8 mil sacas a 126.</span>
-                <span style="align-self:flex-end;font-size:11px;color:#596363;padding:0 4px">14:02</span>
-              </div>
+                <sc-if value="{{ audioDone }}" hint-placeholder-val="{{ false }}">
+                  <div style="align-self:flex-start;max-width:92%;background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:10px 13px 7px;display:flex;flex-direction:column;gap:6px;font-size:14.5px;line-height:1.42">
+                    <span style="font-size:13px;font-weight:600;color:#FF1A6C">Grace · WinsVue</span>
+                    <span>Lancei 420 L de diesel no trator 7230, talhão 12 da Santa Clara. Bateu com a nota do posto.</span>
+                    <span style="align-self:flex-end;font-size:11px;color:#596363">06:43</span>
+                  </div>
+                </sc-if>
+              </sc-if>
+
+              <sc-if value="{{ isTexto }}" hint-placeholder-val="{{ false }}">
+                <div style="align-self:center;text-align:center;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#373535;background:#D5D8DD;padding:4px 10px">Hoje · 11:15</div>
+                <div style="align-self:flex-start;max-width:92%;background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:10px 13px 7px;display:flex;flex-direction:column;gap:6px;font-size:14.5px;line-height:1.42">
+                  <span style="font-size:13px;font-weight:600;color:#2459B3">{{ produtor }} · produtor</span>
+                  <span>Fechei 80 ton daquele adubo com o Marcos, 30/60/90.</span>
+                  <span style="align-self:flex-end;font-size:11px;color:#596363">11:15</span>
+                </div>
+                <div style="align-self:flex-start;max-width:92%;background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:10px 13px 7px;display:flex;flex-direction:column;gap:6px;font-size:14.5px;line-height:1.42">
+                  <span style="font-size:13px;font-weight:600;color:#FF1A6C">Grace · WinsVue</span>
+                  <span>Anotei: 80 t do 02-20-20 com a Agro Sul, em 3 parcelas. É para a soja 26/27 da Santa Clara?</span>
+                  <span style="align-self:flex-end;font-size:11px;color:#596363">11:16</span>
+                </div>
+              </sc-if>
+
+              <sc-if value="{{ isNota }}" hint-placeholder-val="{{ false }}">
+                <div style="align-self:center;text-align:center;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#373535;background:#D5D8DD;padding:4px 10px">28/09 · E-mail do Posto Trevo</div>
+                <div style="align-self:flex-start;max-width:92%;background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:10px 13px 7px;display:flex;flex-direction:column;gap:6px;font-size:14.5px;line-height:1.42;width:92%">
+                  <span style="font-size:12px;font-style:italic;color:#596363">Encaminhada</span>
+                  <div style="background:#F4F5F7;padding:10px;display:flex;flex-direction:column;gap:7px;font-family:Menlo,Consolas,monospace;font-size:11px;line-height:1.4;color:#000916">
+                    <div style="display:flex;justify-content:space-between;gap:8px;border-bottom:1px dashed rgba(15,27,53,.3);padding-bottom:6px"><span style="font-weight:700">DANFE · NF-e 18.233</span><span style="color:#596363">Série 1</span></div>
+                    <span>Posto Trevo Comércio de Combustíveis Ltda</span>
+                    <div style="display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1.15fr) minmax(0,.75fr) minmax(0,1.3fr);gap:6px;white-space:nowrap;color:#596363;font-size:10px;text-transform:uppercase"><span>Produto</span><span>Qtd</span><span>Unit.</span><span style="text-align:right">Total</span></div>
+                    <div style="display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1.15fr) minmax(0,.75fr) minmax(0,1.3fr);gap:6px;white-space:nowrap"><span>Diesel S10</span><span>3.200 L</span><span>6,10</span><span style="text-align:right">19.520,00</span></div>
+                    <div style="display:flex;justify-content:space-between;gap:8px;border-top:1px dashed rgba(15,27,53,.3);padding-top:6px"><span style="color:#596363">Vence 28/10/2026</span><span style="font-weight:700">R$ 19.520,00</span></div>
+                  </div>
+                  <span style="align-self:flex-end;font-size:11px;color:#596363">08:10</span>
+                </div>
+                <div style="align-self:flex-start;max-width:92%;background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:10px 13px 7px;display:flex;flex-direction:column;gap:6px;font-size:14.5px;line-height:1.42">
+                  <span style="font-size:13px;font-weight:600;color:#FF1A6C">Grace · WinsVue</span>
+                  <span>Zé Carlos, a nota tem 3.200 L e os áudios somam 2.940 L. Onde foram os outros 260 litros?</span>
+                  <span style="align-self:flex-end;font-size:11px;color:#596363">08:11</span>
+                </div>
+              </sc-if>
+
+              <sc-if value="{{ isExtrato }}" hint-placeholder-val="{{ false }}">
+                <div style="align-self:center;text-align:center;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#373535;background:#D5D8DD;padding:4px 10px">30/09 · Via Open Finance</div>
+                <div style="align-self:flex-start;max-width:92%;background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:10px 13px 7px;display:flex;flex-direction:column;gap:6px;font-size:14.5px;line-height:1.42;width:92%">
+                  <span style="font-size:13px;font-weight:600;color:#2459B3">Sicredi · conta 34.512-0</span>
+                  <div style="display:flex;flex-direction:column;font-family:Menlo,Consolas,monospace;font-size:11px;line-height:1.35;color:#000916">
+                    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;padding:7px 0;border-bottom:1px solid rgba(15,27,53,.1)"><span>PIX ENV POSTO TREVO LTDA</span><span style="color:#FF003F">−12.480,00</span></div>
+                    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;padding:7px 0;border-bottom:1px solid rgba(15,27,53,.1)"><span>TED REC CEREALISTA PLANALTO</span><span style="color:#2459B3">+420.000,00</span></div>
+                    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;padding:7px 0;border-bottom:1px solid rgba(15,27,53,.1)"><span>FOLHA PAGAMENTO SET</span><span style="color:#FF003F">−86.912,40</span></div>
+                    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;padding:7px 0"><span>TARIFA PACOTE SERVICOS</span><span style="color:#FF003F">−89,00</span></div>
+                  </div>
+                  <span style="align-self:flex-end;font-size:11px;color:#596363">07:00</span>
+                </div>
+                <div style="align-self:flex-start;max-width:92%;background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:10px 13px 7px;display:flex;flex-direction:column;gap:6px;font-size:14.5px;line-height:1.42">
+                  <span>Conciliei o extrato de ontem. Os 4 movimentos estão explicados e nada ficou pendente.</span>
+                  <span style="align-self:flex-end;font-size:11px;color:#596363">07:01</span>
+                </div>
+              </sc-if>
+
+              <sc-if value="{{ isContrato }}" hint-placeholder-val="{{ false }}">
+                <div style="align-self:center;text-align:center;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#373535;background:#D5D8DD;padding:4px 10px">Hoje · 14:02</div>
+                <div style="align-self:flex-end;max-width:90%;background:#0F1B35;color:#FFFFFF;border-radius:14px 4px 14px 14px;padding:8px 8px 6px;display:flex;flex-direction:column;gap:8px;font-size:14.5px;line-height:1.42">
+                  <div style="display:flex;gap:10px;align-items:center;background:rgba(255,255,255,.10);padding:10px;border-radius:8px">
+                    <div style="width:36px;height:46px;background:#FFFFFF;display:flex;align-items:flex-end;justify-content:center;padding-bottom:5px;flex:none"><span style="font-size:10px;font-weight:700;color:#FF003F">PDF</span></div>
+                    <div style="display:flex;flex-direction:column;gap:2px;min-width:0">
+                      <span style="font-size:14px;font-weight:600">contrato-0447-26.pdf</span>
+                      <span style="font-size:12px;color:rgba(255,255,255,.65)">4 páginas · 1,2 MB</span>
+                    </div>
+                  </div>
+                  <span style="padding:0 5px">Assinei esse da Cerealista Planalto. 8 mil sacas a 126.</span>
+                  <span style="align-self:flex-end;font-size:11px;color:rgba(255,255,255,.65);padding:0 5px">14:02</span>
+                </div>
+                <div style="align-self:flex-start;max-width:92%;background:#FFFFFF;border-radius:4px 14px 14px 14px;padding:10px 13px 7px;display:flex;flex-direction:column;gap:6px;font-size:14.5px;line-height:1.42">
+                  <span>Lancei o recebível de R$ 1,008 mi para 30/04. Agora 22% da sua produção tem preço.</span>
+                  <span style="align-self:flex-end;font-size:11px;color:#596363">14:03</span>
+                </div>
+              </sc-if>
+
             </div>
-          </sc-if>
+            <div style="background:#FFFFFF;padding:10px 12px 20px;display:flex;align-items:center;gap:8px;border-top:1px solid rgba(15,27,53,.12)">
+              <div style="flex:1;background:#F4F5F7;border-radius:20px;padding:11px 15px;font-size:14px;color:#596363">Mensagem</div>
+              <div style="width:42px;height:42px;border-radius:50%;background:#568EFF;display:flex;align-items:center;justify-content:center;flex:none"><span style="width:9px;height:16px;border-radius:5px;background:#FFFFFF"></span></div>
+            </div>
+          </div>
         </div>
 
-        <div style="display:flex;flex-direction:column">
+        <div style="flex:999 1 420px;display:flex;flex-direction:column">
           <sc-if value="{{ showOut }}" hint-placeholder-val="{{ true }}">
             <div style="flex:1;background:#FFFFFF;border:1px solid rgba(15,27,53,.18);border-top:4px solid #568EFF;padding:clamp(20px,2.5vw,32px);display:flex;flex-direction:column;gap:16px">
               <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap">
@@ -1384,6 +1428,10 @@ class Component extends DCLogic {
       replyDepois: () => this.reply('depois'),
 
       tabs,
+      capHead: ['audio', 'texto', 'nota'].includes(s.capTab)
+        ? { name: 'Fazenda Santa Clara', sub: 'Zé Carlos, ' + P + ', Grace e mais 4', init: 'SC', initSize: '15px', clock: { audio: '6:42', texto: '11:16', nota: '8:11' }[s.capTab] }
+        : { name: 'Grace · WinsVue', sub: 'Controladoria da fazenda', init: 'G', initSize: '18px', clock: s.capTab === 'extrato' ? '7:01' : '14:03' },
+      audioDone: p >= 1,
       isAudio: s.capTab === 'audio', isTexto: s.capTab === 'texto', isNota: s.capTab === 'nota', isExtrato: s.capTab === 'extrato', isContrato: s.capTab === 'contrato',
       wave,
       playIcon: s.playing ? '❚❚' : (p >= 1 ? '↺' : '▶'),
