@@ -306,20 +306,15 @@ html{scroll-behavior:smooth}
     }
 
     if (label === 'Tese') {
-      $$(sec, 'ol[data-steps]').forEach(list => {
-        Array.from(list.children).forEach((li, i) => {
-          add(list, li, 'left', 140 + i * 70, 0.45);
-          const tg = li.querySelector('[data-tag]');
-          if (tg) add(list, tg, 'pop', 330 + i * 70, 0.4);
+      $$(sec, '[data-steps]').forEach((lane, li) => {
+        Array.from(lane.children).forEach((seg, i) => {
+          add(lane, seg, 'pop', 120 + li * 160 + i * 55, 0.42);
+          if (seg.style.backgroundColor === BLUE) {
+            seg.classList.add('m-chip', 'm-loop');
+            seg.style.setProperty('--i', i);
+          }
         });
-        if (list.closest('[data-tese="wins"]')) {
-          pick(list, '[data-tag]', st => st.backgroundColor === BLUE).forEach((t, i) => {
-            t.classList.add('m-chip', 'm-loop');
-            t.style.setProperty('--i', i);
-          });
-        }
       });
-      $$(sec, '[data-big]').forEach(n => add(n.parentElement, n, 'pop', 80, 0.55));
       live.observe(sec);
     }
 
